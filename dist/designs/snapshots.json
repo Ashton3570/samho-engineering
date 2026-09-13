@@ -13,5 +13,11 @@
     "design": 3,
     "source_commit": "752282d09384d2f830d687e38b69805a24a27019",
     "path": "/designs/v3/"
+  },
+  {
+    "design": 4,
+    "path": "/designs/v4/",
+    "reference": "https://www.skf.com/kr",
+    "description": "SKF-inspired industrial concept, authored 2026-09-13"
   }
 ]
