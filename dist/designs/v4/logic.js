@@ -1,17 +1,243 @@
 (function(root){
 'use strict';
+const brochureDate='2025-10-01';
 const products=[
- {id:'ball',no:'01',group:'ball',english:'BALL BEARING',title:'볼 베어링',short:'다양한 회전 장치의 기본이 되는 볼 형태의 베어링.',description:'볼을 전동체로 사용해 회전을 지지하는 베어링입니다. 깊은 홈, 앵귤러 콘택트 등 여러 형식이 있으며, 구조에 따라 하중 방향과 회전 특성이 달라집니다.',tags:['범용 회전 장치','볼 전동체'],load:'형식에 따라 반경·축 방향 하중 지지',application:'전동기, 펌프, 일반 산업기계',check:'하중 방향, 회전 속도, 내부 틈새, 씰 형식',element:'볼',keyword:'모터 전동기 펌프 ball motor pump 깊은 홈 앵귤러 회전'},
- {id:'cylindrical',no:'02',group:'roller',english:'CYLINDRICAL ROLLER BEARING',title:'원통 롤러 베어링',short:'원통형 롤러로 반경 방향 하중을 지지하는 구조.',description:'원통형 롤러를 전동체로 사용하며, 주로 반경 방향 하중을 지지합니다. 궤도륜 턱의 유무와 배열에 따라 축 방향 지지 특성 및 분리 가능 여부가 달라집니다.',tags:['반경 방향 하중','원통형 롤러'],load:'주로 반경 방향 하중, 축 방향 지지는 형식별 확인',application:'산업용 감속기, 전동기, 공작기계',check:'하중 크기, 축 방향 변위, 장착 정렬, 형식',element:'원통형 롤러',keyword:'롤러 roller cylindrical 감속기 기어 gearbox 모터 전동기 공작기계'},
- {id:'taper',no:'03',group:'roller',english:'TAPERED ROLLER BEARING',title:'테이퍼 롤러 베어링',short:'반경·축 방향의 복합 하중을 고려한 원뿔형 롤러.',description:'원뿔 형태의 롤러와 궤도를 사용해 반경 방향 및 축 방향 하중을 함께 지지하는 베어링입니다. 단열 형식은 한 방향의 축 하중을 지지하므로 설치 배열과 조정 조건을 검토합니다.',tags:['복합 하중','테이퍼 롤러'],load:'반경 및 축 방향의 복합 하중',application:'차축, 감속기, 산업용 구동 장치',check:'하중 방향, 조합 배열, 내부 틈새 또는 예압',element:'원뿔형 롤러',keyword:'taper tapered roller 롤러 복합 축 차축 감속기 중장비 자동차'}
+  {
+    "id": "trb-cage",
+    "no": "01",
+    "group": "cage",
+    "english": "TRB CAGE",
+    "title": "TRB 케이지",
+    "short": "테이퍼 롤러 베어링용 케이지. Site-A의 주력 생산 품목입니다.",
+    "description": "삼호엔지니어링은 1987년 TRB 케이지 생산을 시작했습니다. 2011년 원펀치 금형을 도입했으며, 영주 Site-A에서 TRB 케이지를 생산합니다.",
+    "tags": [
+      "TRB",
+      "Site-A"
+    ],
+    "application": "테이퍼 롤러 베어링",
+    "size": "50–200 mm",
+    "capacity": "33,600,000 개/년",
+    "keyword": "테이퍼 롤러 원펀치 taper roller cage",
+    "page": 9
+  },
+  {
+    "id": "dgbb-cage",
+    "no": "02",
+    "group": "cage",
+    "english": "DGBB CAGE",
+    "title": "DGBB 케이지",
+    "short": "깊은 홈 볼 베어링용 케이지. Site-B에서 생산합니다.",
+    "description": "1987년부터 생산해 온 깊은 홈 볼 베어링(DGBB)용 케이지입니다. 영주 Site-B에서 DGBB 케이지와 실드를 생산합니다.",
+    "tags": [
+      "DGBB",
+      "Site-B"
+    ],
+    "application": "깊은 홈 볼 베어링",
+    "size": "40–300 mm",
+    "capacity": "62,000,000 개/년",
+    "keyword": "볼 리테이너 deep groove ball cage",
+    "page": 10
+  },
+  {
+    "id": "dgbb-shield",
+    "no": "03",
+    "group": "shield",
+    "english": "DGBB SHIELD",
+    "title": "DGBB 실드",
+    "short": "깊은 홈 볼 베어링용 실드. 케이지와 함께 Site-B에서 생산합니다.",
+    "description": "삼호엔지니어링의 주요 생산 품목인 깊은 홈 볼 베어링(DGBB)용 실드입니다. 회사 소개서에 기재된 생산 외경 범위는 35–300 mm입니다.",
+    "tags": [
+      "DGBB",
+      "Site-B"
+    ],
+    "application": "깊은 홈 볼 베어링",
+    "size": "35–300 mm",
+    "capacity": "62,000,000 개/년",
+    "keyword": "쉴드 차폐판 shield deep groove ball",
+    "page": 11
+  },
+  {
+    "id": "pronged-cage",
+    "no": "04",
+    "group": "cage",
+    "english": "PRONGED TYPE CAGE",
+    "title": "프롱 타입 케이지",
+    "short": "외경 20–40 mm 범위의 프롱 타입 케이지입니다.",
+    "description": "회사 소개서에 수록된 Pronged type cage 제품입니다. 생산 외경 범위는 20–40 mm이며, 세부 형상과 요구 사양은 도면을 기준으로 확인합니다.",
+    "tags": [
+      "PRONGED TYPE",
+      "케이지"
+    ],
+    "application": "프롱 타입 케이지",
+    "size": "20–40 mm",
+    "capacity": "14,400,000 개/년",
+    "keyword": "프롱 프롱드 pronged type cage",
+    "page": 12
+  },
+  {
+    "id": "strut-raceway",
+    "no": "05",
+    "group": "raceway",
+    "english": "RACEWAY FOR STRUT BEARING",
+    "title": "스트럿 베어링 레이스웨이",
+    "short": "스트럿 베어링에 적용되는 레이스웨이입니다.",
+    "description": "스트럿 베어링용 레이스웨이로, 회사 소개서에는 외경 60–150 mm의 생산 범위와 연간 5,000,000개의 생산능력이 기재되어 있습니다.",
+    "tags": [
+      "STRUT BEARING",
+      "레이스웨이"
+    ],
+    "application": "스트럿 베어링",
+    "size": "60–150 mm",
+    "capacity": "5,000,000 개/년",
+    "keyword": "스트럿 스트러트 궤도륜 strut bearing raceway",
+    "page": 13
+  },
+  {
+    "id": "acbb-cage",
+    "no": "06",
+    "group": "cage",
+    "english": "ACBB CAGE",
+    "title": "중장비 베어링용 ACBB 케이지",
+    "short": "중장비 베어링용 ACBB 케이지 제품입니다.",
+    "description": "회사 소개서의 기타 제품군에 수록된 중장비 베어링용 ACBB 케이지입니다. 상세 규격과 생산능력은 소개서에 별도로 기재되어 있지 않습니다.",
+    "tags": [
+      "ACBB",
+      "중장비"
+    ],
+    "application": "중장비용 앵귤러 콘택트 볼 베어링",
+    "size": "별도 문의",
+    "capacity": "소개서 미기재",
+    "keyword": "중장비 heavy equipment angular contact ball cage",
+    "page": 14
+  },
+  {
+    "id": "wheel-cover",
+    "no": "07",
+    "group": "shield",
+    "english": "WHEEL BEARING COVER & CAP",
+    "title": "휠 베어링 커버·캡",
+    "short": "휠 베어링에 적용되는 커버와 캡입니다.",
+    "description": "회사 소개서에 수록된 휠 베어링 커버 및 캡 제품입니다. 필요한 형상, 치수와 도면 정보를 정리해 상담할 수 있습니다.",
+    "tags": [
+      "WHEEL BEARING",
+      "COVER & CAP"
+    ],
+    "application": "휠 베어링",
+    "size": "별도 문의",
+    "capacity": "소개서 미기재",
+    "keyword": "휠 커버 캡 wheel bearing cover cap",
+    "page": 15
+  },
+  {
+    "id": "brass-cage",
+    "no": "08",
+    "group": "cage",
+    "english": "BRASS CAGE FOR ACBB",
+    "title": "ACBB 황동 케이지",
+    "short": "ACBB용 황동 케이지 제품입니다.",
+    "description": "회사 소개서에 수록된 ACBB용 황동 케이지입니다. 상세 생산 규격과 수량 조건은 별도 상담이 필요합니다.",
+    "tags": [
+      "ACBB",
+      "황동"
+    ],
+    "application": "앵귤러 콘택트 볼 베어링",
+    "size": "별도 문의",
+    "capacity": "소개서 미기재",
+    "keyword": "황동 brass angular contact ball cage",
+    "page": 16
+  },
+  {
+    "id": "stamped-raceway",
+    "no": "09",
+    "group": "raceway",
+    "english": "STAMPED RACEWAY",
+    "title": "프레스 성형 레이스웨이",
+    "short": "프레스 성형 방식의 레이스웨이 제품입니다.",
+    "description": "회사 소개서에 Stamped raceway로 소개된 제품입니다. 제품 형상과 치수, 적용 조건은 도면을 기준으로 확인합니다.",
+    "tags": [
+      "STAMPED",
+      "레이스웨이"
+    ],
+    "application": "프레스 성형 레이스웨이",
+    "size": "별도 문의",
+    "capacity": "소개서 미기재",
+    "keyword": "프레스 스탬핑 궤도륜 stamped raceway",
+    "page": 16
+  }
 ];
 const questions=[
- {title:'주로 어떤 방향의 하중이 작용하나요?',help:'하중 방향이 확실하지 않다면 ‘아직 확인 전’을 선택하세요.',options:[{value:'radial',title:'반경 방향',sub:'축에 수직인 방향으로 작용하는 하중'},{value:'combined',title:'반경 + 축 방향',sub:'두 방향의 하중이 함께 작용'},{value:'unknown',title:'아직 확인 전',sub:'장비와 기존 베어링 정보를 먼저 정리'}]},
- {title:'운전 조건에서 무엇을 먼저 살펴봐야 하나요?',help:'실제 회전 속도와 하중 수치는 상담 시 별도로 확인합니다.',options:[{value:'rotation',title:'일반적인 회전 운전',sub:'전동기·펌프 등 회전 장치의 기본 검토'},{value:'load',title:'큰 하중 또는 충격',sub:'하중을 중심으로 형식과 운전 조건 검토'},{value:'unknown',title:'아직 확인 전',sub:'장비 사양 또는 제조사 기준 확인 필요'}]},
- {title:'어떤 사용 환경인가요?',help:'환경 조건은 씰·윤활·보호 방식 검토에 활용됩니다.',options:[{value:'normal',title:'일반적인 실내 환경',sub:'온도와 윤활 등 기본 운전 조건 확인'},{value:'dust',title:'먼지 또는 수분 노출',sub:'밀봉과 오염 방지 조건을 추가로 검토'},{value:'heat',title:'고온 등 특수 환경',sub:'온도 범위·재질·윤활 조건을 추가로 검토'}]}
+  {
+    "title": "어떤 부품을 찾으시나요?",
+    "help": "문의할 부품군을 선택하세요. 아직 정해지지 않았다면 전체 제품을 살펴볼 수 있습니다.",
+    "options": [
+      {
+        "value": "cage",
+        "title": "케이지",
+        "sub": "TRB · DGBB · 프롱 타입 · ACBB"
+      },
+      {
+        "value": "shield",
+        "title": "실드 · 커버 · 캡",
+        "sub": "DGBB 실드 · 휠 베어링 커버와 캡"
+      },
+      {
+        "value": "raceway",
+        "title": "레이스웨이",
+        "sub": "스트럿 베어링용 · 프레스 성형"
+      },
+      {
+        "value": "all",
+        "title": "아직 확인 전",
+        "sub": "전체 제품군을 비교하며 상담 준비"
+      }
+    ]
+  },
+  {
+    "title": "현재 준비된 규격 정보는 무엇인가요?",
+    "help": "이 정보는 상담 준비에만 사용되며, 제품 적합성을 자동으로 판정하지 않습니다.",
+    "options": [
+      {
+        "value": "drawing",
+        "title": "도면 · 품번이 있습니다",
+        "sub": "도면 번호와 개정 정보, 요구 사양 정리"
+      },
+      {
+        "value": "size",
+        "title": "치수 · 샘플 정보가 있습니다",
+        "sub": "외경과 주요 치수, 제품 형상 확인"
+      },
+      {
+        "value": "unknown",
+        "title": "아직 준비 중입니다",
+        "sub": "필요한 부품군과 적용 제품부터 정리"
+      }
+    ]
+  },
+  {
+    "title": "어떤 내용으로 상담하시나요?",
+    "help": "필요 수량과 희망 일정은 견적 요청서에 직접 입력할 수 있습니다.",
+    "options": [
+      {
+        "value": "new",
+        "title": "신규 부품 검토",
+        "sub": "도면과 재질, 품질 요구 사항 정리"
+      },
+      {
+        "value": "production",
+        "title": "양산 · 공급 상담",
+        "sub": "연간 예상 물량과 공급 일정 정리"
+      },
+      {
+        "value": "spec",
+        "title": "규격 · 생산 범위 확인",
+        "sub": "소개서의 외경 범위와 생산 품목 확인"
+      }
+    ]
+  }
 ];
+
 function filterProducts(query,group){const q=query.trim().toLocaleLowerCase().replace(/\s+/g,' ');return products.filter(p=>(group==='all'||p.group===group)&&(!q||[p.title,p.english,p.application,p.short,p.keyword].join(' ').toLocaleLowerCase().includes(q)));}
-function recommend(answers){const [load,operation,environment]=answers;let ids,title,reason;if(load==='unknown'||operation==='unknown'){ids=products.map(p=>p.id);title='먼저 사용 조건을 확인해 주세요.';reason='하중 방향 또는 운전 조건이 정리되지 않았습니다. 기존 품번, 장비 사양과 제조사 기준을 확인한 뒤 베어링 유형을 비교해 보세요.';}else if(load==='combined'){ids=['taper','ball'];title='복합 하중을 지지하는 형식부터.';reason='테이퍼 롤러 베어링과 축 하중 지지가 가능한 볼 베어링 형식을 먼저 비교할 수 있습니다. 축 하중 방향과 설치 배열의 확인이 필요합니다.';}else if(operation==='load'){ids=['cylindrical','taper'];title='롤러 베어링의 구조를 살펴보세요.';reason='반경 방향의 큰 하중 조건에서는 원통 롤러 형식 등을 검토할 수 있습니다. 충격의 정도와 축 방향 지지 필요성도 함께 확인해야 합니다.';}else{ids=['ball','cylindrical'];title='기본 회전 조건부터 비교해 보세요.';reason='볼 베어링과 원통 롤러 베어링의 구조 및 하중 특성을 살펴볼 수 있습니다. 실제 하중과 속도에 따라 검토 결과가 달라집니다.';}const envNote=environment==='dust'?'먼지·수분 노출에 따른 밀봉, 오염 방지와 윤활 조건을 확인하세요.':environment==='heat'?'운전 온도 범위와 베어링 재질, 윤활제, 씰의 허용 조건을 확인하세요.':'운전 온도와 윤활 방식, 점검 주기를 함께 확인하세요.';const labels=answers.map((v,i)=>questions[i]?.options.find(o=>o.value===v)?.title||'확인 전');return{ids,title,reason,envNote,labels};}
-function buildInquiry(items,fields,context,date){if(!items.length)throw new Error('제품을 담거나 품번을 직접 입력해 주세요.');items.forEach(item=>{if(!item.title.trim())throw new Error('직접 입력한 품목의 품번 또는 이름을 적어 주세요.');if(!Number.isInteger(Number(item.qty))||Number(item.qty)<1||Number(item.qty)>1000000)throw new Error('수량은 1~1,000,000 사이의 정수로 입력해 주세요.');});const value=v=>String(v||'미기재').trim()||'미기재';return ['삼호엔지니어링 | 견적 요청서','작성일: '+date,'','[요청 품목]',...items.map((p,i)=>(i+1)+'. '+p.title.trim()+' / '+Number(p.qty)+'개'),'','[상담 정보]','회사 / 담당자: '+value(fields.company),'회신 연락처: '+value(fields.contact),'사용 장비: '+value(fields.machine),'희망 납기: '+value(fields.date),'','[추가 요청 사항]',value(fields.notes),...(context?['','[선정 도우미에서 정리한 조건]',context]:[]),'','※ 견적 상담 준비용 문서입니다. 전송 또는 주문이 완료된 상태가 아닙니다.','※ 실제 취급 품목, 규격, 재고 및 납기는 별도 확인이 필요합니다.'].join('\n');}
-const api={products,questions,filterProducts,recommend,buildInquiry};root.SamhoLogic=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
+function recommend(answers){const [group,info,purpose]=answers;const ids=products.filter(p=>group==='all'||p.group===group).map(p=>p.id);const title=group==='all'?'문의할 제품군부터 확인해 주세요.':'선택한 부품군의 생산 품목입니다.';const reason='아래 제품은 회사 소개서에 수록된 품목입니다. 외경 범위와 제품 설명을 확인한 뒤 필요한 품목을 요청서에 담아 주세요.';const infoNote=info==='drawing'?'도면 번호·개정 정보와 재질, 공차 등 요구 사항을 준비해 주세요.':info==='size'?'외경과 주요 치수, 샘플의 형상 정보를 준비해 주세요.':'적용 베어링과 필요한 부품 종류부터 정리해 주세요.';const purposeNote=purpose==='production'?'연간 예상 수량과 회차별 공급 일정도 함께 적어 주세요.':purpose==='new'?'신규 제작 가능 여부와 개발 일정은 별도 검토가 필요합니다.':'소개서의 외경 범위는 참고 기준이며, 세부 사양은 별도 확인이 필요합니다.';const labels=answers.map((v,i)=>questions[i]?.options.find(o=>o.value===v)?.title||'확인 전');return{ids,title,reason,envNote:infoNote+' '+purposeNote,labels};}
+function buildInquiry(items,fields,context,date){if(!items.length)throw new Error('제품을 담거나 품번을 직접 입력해 주세요.');items.forEach(item=>{if(!item.title.trim())throw new Error('직접 입력한 품목의 품번 또는 이름을 적어 주세요.');if(!Number.isInteger(Number(item.qty))||Number(item.qty)<1||Number(item.qty)>1000000)throw new Error('수량은 1~1,000,000 사이의 정수로 입력해 주세요.');});const value=v=>String(v||'미기재').trim()||'미기재';return ['삼호엔지니어링 | 견적 요청서','작성일: '+date,'','[요청 품목]',...items.map((p,i)=>(i+1)+'. '+p.title.trim()+' / '+Number(p.qty)+'개'),'','[상담 정보]','회사 / 담당자: '+value(fields.company),'회신 연락처: '+value(fields.contact),'적용 베어링 / 부품: '+value(fields.machine),'희망 납기: '+value(fields.date),'','[추가 요청 사항]',value(fields.notes),...(context?['','[상담 도우미에서 정리한 조건]',context]:[]),'','※ 견적 상담 준비용 문서입니다. 전송 또는 주문이 완료된 상태가 아닙니다.','※ 제작 가능 여부, 상세 규격, 공급 수량 및 납기는 별도 협의가 필요합니다.'].join('\n');}
+const api={products,questions,brochureDate,filterProducts,recommend,buildInquiry};root.SamhoLogic=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
