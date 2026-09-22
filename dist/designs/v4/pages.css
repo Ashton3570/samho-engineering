@@ -10,3 +10,8 @@
 .site-header .desktop-nav>.company-dropdown{align-self:center;font-size:var(--nav-font-size);line-height:1.5}
 .site-header .desktop-nav>.company-dropdown>summary:after{line-height:1}
 @media(max-width:1200px){.site-header .desktop-nav{--nav-font-size:14px}}
+
+/* Full management philosophy approved by the company. */
+.philosophy-content .overview-statement>p+p{margin-top:22px}
+.philosophy-content h2,.philosophy-content h3{word-break:keep-all;overflow-wrap:break-word}
+.philosophy-content .principle-subtitle{display:block;margin-top:12px;font-size:16px;line-height:1.8;font-weight:400;letter-spacing:-.02em;color:#63748e}
