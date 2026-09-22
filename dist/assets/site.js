@@ -103,7 +103,7 @@
       const table = el('table'), head = el('thead'), body = el('tbody'), header = el('tr');
       ['비교 항목', ...chosen.map(p=>p.title)].forEach(t => { const th=el('th',t); th.scope='col'; header.append(th); });
       head.append(header);
-      [['적용 구분','application'],['생산 외경 (O.D.)','size'],['연간 생산능력','capacity']].forEach(([title,key]) => {
+      [['적용 구분','application'],['생산 외경 (O.D.)','size']].forEach(([title,key]) => {
         const row=el('tr'), th=el('th',title); th.scope='row'; row.append(th);
         chosen.forEach(p=>row.append(el('td',p[key]))); body.append(row);
       });

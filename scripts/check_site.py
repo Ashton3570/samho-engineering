@@ -66,7 +66,13 @@ def main():
         page = DIST/'products'/item['id']/'index.html'
         assert page.exists(), item['id']
         if item['id'] in ('acbb-cage','wheel-cover','brass-cage','stamped-raceway'):
-            assert item['size'] == item['capacity'] == '', 'Unknown specification filled'
+            assert item['size'] == '', 'Unknown specification filled'
+    assert all('capacity' not in p for p in products), 'Sensitive production field reintroduced'
+    assert not (DIST/'downloads/product-summary.csv').exists(), 'Removed CSV is still accessible'
+    for asset in DIST.rglob('*'):
+        if asset.suffix in ('.html','.js','.json','.csv','.txt'):
+            value = asset.read_text()
+            assert '생산능력' not in value and '33,600,000' not in value and '62,000,000' not in value, f'Sensitive production information: {asset}'
     public_pages = [p for p in paths if 'previews' not in p.relative_to(DIST).parts]
     assert len(public_pages) == 17, f'Unexpected public page count: {len(public_pages)}'
     assert not errors, '\n'.join(errors)

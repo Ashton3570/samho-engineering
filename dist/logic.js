@@ -16,7 +16,6 @@ const products=[
     ],
     "application": "테이퍼 롤러 베어링",
     "size": "50–200 mm",
-    "capacity": "33,600,000 개/년",
     "keyword": "테이퍼 롤러 원펀치 taper roller cage",
     "page": 9
   },
@@ -34,7 +33,6 @@ const products=[
     ],
     "application": "깊은 홈 볼 베어링",
     "size": "40–300 mm",
-    "capacity": "62,000,000 개/년",
     "keyword": "볼 리테이너 deep groove ball cage",
     "page": 10
   },
@@ -52,7 +50,6 @@ const products=[
     ],
     "application": "깊은 홈 볼 베어링",
     "size": "35–300 mm",
-    "capacity": "62,000,000 개/년",
     "keyword": "쉴드 차폐판 shield deep groove ball",
     "page": 11
   },
@@ -70,7 +67,6 @@ const products=[
     ],
     "application": "프롱 타입 케이지",
     "size": "20–40 mm",
-    "capacity": "14,400,000 개/년",
     "keyword": "프롱 프롱드 pronged type cage",
     "page": 12
   },
@@ -81,14 +77,13 @@ const products=[
     "english": "RACEWAY FOR STRUT BEARING",
     "title": "스트럿 베어링 레이스웨이",
     "short": "스트럿 베어링에 적용되는 레이스웨이입니다.",
-    "description": "스트럿 베어링용 레이스웨이로, 회사 소개서에는 외경 60–150 mm의 생산 범위와 연간 5,000,000개의 생산능력이 기재되어 있습니다.",
+    "description": "스트럿 베어링용 레이스웨이입니다. 생산 외경 범위는 60–150 mm입니다.",
     "tags": [
       "STRUT BEARING",
       "레이스웨이"
     ],
     "application": "스트럿 베어링",
     "size": "60–150 mm",
-    "capacity": "5,000,000 개/년",
     "keyword": "스트럿 스트러트 궤도륜 strut bearing raceway",
     "page": 13
   },
@@ -99,14 +94,13 @@ const products=[
     "english": "ACBB CAGE",
     "title": "중장비 베어링용 ACBB 케이지",
     "short": "중장비 베어링용 ACBB 케이지 제품입니다.",
-    "description": "회사 소개서의 기타 제품군에 수록된 중장비 베어링용 ACBB 케이지입니다. 상세 규격과 생산능력은 소개서에 별도로 기재되어 있지 않습니다.",
+    "description": "회사 소개서의 기타 제품군에 수록된 중장비 베어링용 ACBB 케이지입니다. 상세 규격은 별도 확인이 필요합니다.",
     "tags": [
       "ACBB",
       "중장비"
     ],
     "application": "중장비용 앵귤러 콘택트 볼 베어링",
     "size": "별도 문의",
-    "capacity": "소개서 미기재",
     "keyword": "중장비 heavy equipment angular contact ball cage",
     "page": 14
   },
@@ -124,7 +118,6 @@ const products=[
     ],
     "application": "휠 베어링",
     "size": "별도 문의",
-    "capacity": "소개서 미기재",
     "keyword": "휠 커버 캡 wheel bearing cover cap",
     "page": 15
   },
@@ -142,7 +135,6 @@ const products=[
     ],
     "application": "앵귤러 콘택트 볼 베어링",
     "size": "별도 문의",
-    "capacity": "소개서 미기재",
     "keyword": "황동 brass angular contact ball cage",
     "page": 16
   },
@@ -160,7 +152,6 @@ const products=[
     ],
     "application": "프레스 성형 레이스웨이",
     "size": "별도 문의",
-    "capacity": "소개서 미기재",
     "keyword": "프레스 스탬핑 궤도륜 stamped raceway",
     "page": 16
   }
