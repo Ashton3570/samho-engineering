@@ -67,9 +67,10 @@ def main():
         assert page.exists(), item['id']
         if item['id'] in ('acbb-cage','wheel-cover','brass-cage','stamped-raceway'):
             assert item['size'] == item['capacity'] == '', 'Unknown specification filled'
-    assert len(paths) == 17, f'Unexpected page count: {len(paths)}'
+    public_pages = [p for p in paths if 'previews' not in p.relative_to(DIST).parts]
+    assert len(public_pages) == 17, f'Unexpected public page count: {len(public_pages)}'
     assert not errors, '\n'.join(errors)
-    print('17 pages: local links, anchors, headings, approved philosophy, and unknown specifications pass.')
+    print(f'{len(public_pages)} public pages + {len(paths)-len(public_pages)} previews: local links, anchors, headings, approved philosophy, and unknown specifications pass.')
 
 
 if __name__ == '__main__':

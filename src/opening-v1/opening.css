@@ -1,0 +1,30 @@
+/* Isolated preview: the production homepage does not load this stylesheet. */
+.opening{position:fixed;inset:0;z-index:90;background:#fff;overflow:hidden;isolation:isolate;will-change:opacity}
+.opening-metal{position:absolute;inset:0;background:#080b10;overflow:hidden;will-change:opacity,transform}
+.metal-art{position:absolute;inset:0}
+.metal-photo,.metal-light{position:absolute;width:100%;height:100%;max-width:none;inset:0;object-fit:cover}
+.metal-photo{opacity:.21}
+.metal-light{filter:brightness(1.12);mask-image:linear-gradient(110deg,transparent 30%,#000 49%,#000 51%,transparent 70%);mask-size:260% 100%;mask-repeat:no-repeat;-webkit-mask-image:linear-gradient(110deg,transparent 30%,#000 49%,#000 51%,transparent 70%);-webkit-mask-size:260% 100%;-webkit-mask-repeat:no-repeat;will-change:mask-position}
+.metal-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 28%,#06080b38 66%,#06080b99 100%)}
+.metal-signature{position:absolute;left:0;right:0;bottom:9%;text-align:center;font-size:10px;font-weight:500;letter-spacing:.28em;color:#ffffff80}
+.opening-brand{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;opacity:0;will-change:opacity,transform;padding:24px}
+.opening-brand img{width:156px;height:156px;object-fit:contain;margin-bottom:19px}
+.opening-company{font-size:26px;line-height:1.5;color:#202b3a;font-weight:600;letter-spacing:-.035em}
+.opening-english{font-size:10px;line-height:1.6;color:#7a8595;letter-spacing:.22em;margin-top:11px;padding-left:.22em}
+.opening-skip{position:absolute;right:max(28px,env(safe-area-inset-right));top:max(24px,env(safe-area-inset-top));display:flex;align-items:center;gap:16px;min-height:44px;padding:8px 12px;color:#fff;font-size:12px;font-weight:500;opacity:.75;border-radius:8px}
+.opening-skip:hover{opacity:1}.opening-skip:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+body.opening-active{overflow:hidden}
+.opening-review{position:fixed;bottom:max(22px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:100;width:max-content;max-width:calc(100% - 32px);border:1px solid #e5e8eb;border-radius:18px;background:#fffffff2;color:#273343;box-shadow:0 8px 32px #11224414;backdrop-filter:blur(16px);font-size:12px;transition:opacity .2s,transform .2s}
+.review-tools{display:flex;align-items:center;gap:6px;padding:9px 12px;white-space:nowrap}
+.review-title{display:flex;align-items:center;gap:7px;font-weight:600;margin-right:12px;margin-left:5px}.review-dot{width:6px;height:6px;border-radius:50%;background:#256cff}
+.review-tools button,.review-tools a{padding:10px 12px;min-height:40px;border-radius:10px;line-height:20px;font-size:12px}
+.review-tools button:hover,.review-tools a:hover{background:#f2f5fa}.review-tools #opening-replay{background:#edf3ff;color:#1b5adc;font-weight:600}
+body.opening-playing .opening-review{opacity:0;pointer-events:none;transform:translate(-50%,8px)}
+#opening-controls{padding:15px 18px 18px;border-top:1px solid #edf0f4;white-space:normal}
+.review-scenes{display:flex;gap:7px;flex-wrap:wrap}.review-scenes button{font-size:11px;min-height:36px;padding:7px 10px;background:#f2f5fa;border-radius:8px;line-height:22px}
+.review-scenes button[aria-pressed=true]{background:#e5eeff;color:#1b5adc}.review-scenes #opening-slow{margin-left:auto}
+.review-timeline{display:flex;align-items:center;gap:12px;font-size:11px;margin-top:15px;white-space:nowrap}.review-timeline input{min-width:70px;flex:1;accent-color:#2469ee}.review-timeline output{width:45px;text-align:right;font-variant-numeric:tabular-nums}
+#opening-controls p{font-size:10px;color:#7c8796;margin-top:10px;line-height:1.7}
+@media(max-width:600px){.metal-photo,.metal-light{width:170%;left:-35%;object-fit:contain}.opening-brand img{width:134px;height:134px;margin-bottom:16px}.opening-company{font-size:23px}.opening-english{font-size:9px}.opening-skip{top:18px;right:16px}.metal-signature{font-size:8px;bottom:18%}.opening-review{bottom:16px;border-radius:15px;max-width:calc(100% - 20px)}.review-tools{gap:1px;padding:7px}.review-title{font-size:10px;gap:5px;margin:0 4px}.review-tools button,.review-tools a{font-size:10px;padding:8px 9px}.review-tools a{display:none}#opening-controls{padding:12px}.review-scenes{gap:5px}.review-scenes button{font-size:10px;padding:6px 8px}.review-scenes #opening-slow{margin-left:0}.review-timeline{gap:8px}}
+@media(max-width:600px){.metal-art{inset:auto;top:50%;left:-35%;width:170%;aspect-ratio:16/9;transform:translateY(-50%);mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 84%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 84%,transparent)}.metal-photo,.metal-light{width:100%;left:0;object-fit:cover}}
+@media(prefers-reduced-motion:reduce){.opening-review{transition:none}.opening{will-change:auto}}
