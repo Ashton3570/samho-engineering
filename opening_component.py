@@ -21,7 +21,7 @@ def with_home_opening(html):
     assets=ROOT/'dist/assets';assets.mkdir(parents=True,exist_ok=True)
     for name in ('opening.css','opening.js'): shutil.copyfile(SRC/name,assets/name)
     # White first paint; failure to load animation must never block the homepage.
-    bootstrap='''<style>html.opening-pending::after{content:"";position:fixed;inset:0;background:white;z-index:110;pointer-events:none}</style><script>if(!location.hash&&!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('opening-pending');setTimeout(()=>document.documentElement.classList.remove('opening-pending'),1500);}</script>'''
-    html=html.replace('</head>',bootstrap+'<link rel="stylesheet" href="/assets/opening.css?v=20260923"><script src="/assets/opening.js?v=20260923" defer></script></head>')
+    bootstrap='<style>html.opening-pending::after{content:"";position:fixed;inset:0;background:white;z-index:110;pointer-events:none}</style><script>'+(SRC/'session.js').read_text()+'</script>'
+    html=html.replace('</head>',bootstrap+'<link rel="stylesheet" href="/assets/opening.css?v=20260923b"><script src="/assets/opening.js?v=20260923b" defer></script></head>')
     html=html.replace('<body>','<body><div id="site-preview">',1)
     return html.replace('</body>','</div>'+opening_markup()+'</body>',1)

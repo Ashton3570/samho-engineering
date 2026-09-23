@@ -6,7 +6,8 @@
   const caption = $('.logo-caption'), outlines = $('#logo-outlines'), fill = $('#logo-fill-rect');
   const guide = $('#logo-guide'), korean = caption.querySelector('p'), english = caption.querySelector('span');
   const paths = [...document.querySelectorAll('.logo-contour')];
-  const review = $('.logo-review'), skip = $('.logo-skip'), replay = $('#logo-replay');
+  const review = $('.logo-review'), replay = $('#logo-replay');
+  const session = window.samhoOpening;
   const inspect = $('#logo-inspect'), controls = $('#logo-controls');
   const slider = $('#logo-timeline'), time = $('#logo-time');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -25,6 +26,7 @@
   }
   function finish() {
     cancel();
+    if (!opening.hidden && !review) session?.markSeen();
     opening.hidden = true;
     site.inert = false;
     if (review) review.inert = false;
@@ -87,7 +89,7 @@
     interacted = true;
     cancel(); reveal();
     returnFocus = true;
-    skip.focus({preventScroll:true});
+    opening.focus({preventScroll:true});
     document.body.classList.add('logo-playing');
     if (review) review.inert = true;
     if (reduced.matches) { render(3600); safety=setTimeout(finish,650); return; }
@@ -112,7 +114,6 @@
   }
   replay?.addEventListener('click',()=>play());
   $('#logo-slow')?.addEventListener('click',()=>play(.5));
-  skip.addEventListener('click',()=>{returnFocus=true;finish();});
   inspect?.addEventListener('click',()=>{
     interacted=true;
     controls.hidden=!controls.hidden;
@@ -126,8 +127,9 @@
   slider?.addEventListener('input',()=>seek(Number(slider.value)));
   document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!opening.hidden){returnFocus=true;finish();}});
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&document.body.classList.contains('logo-playing'))finish();});
+  addEventListener('pagehide',()=>{if(!opening.hidden){returnFocus=false;finish();}});
   addEventListener('resize',()=>{if(!opening.hidden){measure();render(current);}});
   reduced.addEventListener('change',()=>{if(reduced.matches&&!opening.hidden)finish();});
   // The logo is inline SVG: no asset download or artificial loading delay.
-  requestAnimationFrame(()=>{if(!interacted&&!reduced.matches&&(review||!location.hash))play();else document.documentElement.classList.remove('opening-pending');});
+  requestAnimationFrame(()=>{if(!interacted&&!reduced.matches&&(review||session?.shouldPlay))play();else finish();});
 })();
