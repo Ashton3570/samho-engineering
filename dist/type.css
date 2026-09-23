@@ -1,0 +1,20 @@
+@font-face{font-family:"Study Sans KR";src:url(fonts/sans-kr.woff) format("woff");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Study Serif KR";src:url(fonts/serif-kr.woff) format("woff");font-weight:200 900;font-display:swap}
+@font-face{font-family:"Study Batang KR";src:url(fonts/batang-kr.woff) format("woff");font-weight:700;font-display:swap}
+@font-face{font-family:"Study Manrope";src:url(fonts/manrope.woff) format("woff");font-weight:200 800;font-display:swap}
+@font-face{font-family:"Study Montserrat";src:url(fonts/montserrat.woff) format("woff");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Study Cormorant";src:url(fonts/cormorant.woff) format("woff");font-weight:300 700;font-display:swap}
+[data-type]{--kr-font:"Study Sans KR",sans-serif;--kr-weight:600;--kr-size:32px;--kr-track:-.035em;--kr-color:#1e2083;--en-font:"Study Manrope",sans-serif;--en-weight:600;--en-size:11.5px;--en-track:.22em;--en-color:#68738a;--name-gap:13px;--offset:26px;--divider:none;--type-scale:1}
+[data-type="00"]{--kr-font:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;--kr-size:26px;--kr-track:-.035em;--en-font:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;--en-weight:400;--en-size:13px;--en-track:.18em;--en-color:#697586;--name-gap:8px;--offset:18px}
+[data-type="02"]{--kr-weight:300;--kr-size:30px;--kr-track:.08em;--kr-color:#303464;--en-font:"Study Montserrat",sans-serif;--en-weight:400;--en-size:10.5px;--en-track:.26em;--name-gap:16px;--offset:30px}
+[data-type="03"]{--kr-font:"Study Serif KR",serif;--kr-weight:500;--kr-size:32px;--kr-track:.015em;--en-font:"Study Cormorant",serif;--en-weight:500;--en-size:18px;--en-track:.14em;--en-color:#555b7a;--name-gap:12px;--offset:25px}
+[data-type="04"]{--kr-weight:500;--kr-size:30px;--kr-track:.035em;--en-font:"Study Cormorant",serif;--en-weight:500;--en-size:22px;--en-track:.085em;--en-color:#485474;--name-gap:8px;--offset:25px}
+[data-type="05"]{--kr-font:"Study Batang KR",serif;--kr-weight:700;--kr-size:33px;--kr-track:.01em;--en-size:10px;--en-track:.22em;--name-gap:13px;--divider:block;--offset:24px}
+[data-type="06"]{--kr-weight:500;--kr-size:20px;--kr-track:.12em;--kr-color:#666d88;--en-weight:500;--en-size:25px;--en-track:.07em;--en-color:#1e2083;--name-gap:15px;--offset:27px}
+.type-lockup{text-align:center}
+.type-lockup .kr,body[data-type] .logo-caption p{font-family:var(--kr-font);font-weight:var(--kr-weight);font-size:calc(var(--kr-size)*var(--type-scale));letter-spacing:var(--kr-track);color:var(--kr-color);line-height:1.6;white-space:nowrap;font-synthesis:none}
+.type-lockup .en,body[data-type] .logo-caption span{display:block;font-family:var(--en-font);font-weight:var(--en-weight);font-size:calc(var(--en-size)*var(--type-scale));letter-spacing:var(--en-track);color:var(--en-color);line-height:1.7;margin-top:calc(var(--name-gap)*var(--type-scale));padding-left:var(--en-track);white-space:nowrap;font-synthesis:none}
+.type-lockup .en::before,body[data-type] .logo-caption span::before{content:"";display:var(--divider);width:25px;height:1px;background:#a5adc4;margin:0 auto 13px}
+body[data-type] .logo-caption{top:calc(46% + var(--mark-size)/2 + var(--offset))}
+@media(max-width:600px){body[data-type]{--type-scale:.85}body[data-type] .logo-caption{top:calc(43% + var(--mark-size)/2 + var(--offset))}body[data-type="00"]{--type-scale:.885}}
+@media(max-height:520px) and (min-width:601px){body[data-type]{--type-scale:.8}body[data-type] .logo-caption{top:calc(40% + var(--mark-size)/2 + 14px)}}
