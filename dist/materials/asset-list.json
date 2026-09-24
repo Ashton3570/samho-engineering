@@ -1,0 +1,1487 @@
+[
+  {
+    "id": "studio-001",
+    "category": "studio",
+    "filename": "06-1.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 22652397,
+    "preview": "images/studio-001.jpg"
+  },
+  {
+    "id": "studio-002",
+    "category": "studio",
+    "filename": "전경스케치/06-1.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 22652397,
+    "preview": "images/studio-002.jpg"
+  },
+  {
+    "id": "studio-003",
+    "category": "studio",
+    "filename": "06-2.jpg",
+    "original_width": 4032,
+    "original_height": 3024,
+    "original_bytes": 7914751,
+    "preview": "images/studio-003.jpg"
+  },
+  {
+    "id": "studio-004",
+    "category": "studio",
+    "filename": "전경스케치/06-2.jpg",
+    "original_width": 4032,
+    "original_height": 3024,
+    "original_bytes": 7914751,
+    "preview": "images/studio-004.jpg"
+  },
+  {
+    "id": "studio-005",
+    "category": "studio",
+    "filename": "06-3.jpg",
+    "original_width": 8332,
+    "original_height": 3878,
+    "original_bytes": 22267109,
+    "preview": "images/studio-005.jpg"
+  },
+  {
+    "id": "studio-006",
+    "category": "studio",
+    "filename": "전경스케치/06-3.jpg",
+    "original_width": 8332,
+    "original_height": 3878,
+    "original_bytes": 22267109,
+    "preview": "images/studio-006.jpg"
+  },
+  {
+    "id": "studio-007",
+    "category": "studio",
+    "filename": "06-4.jpg",
+    "original_width": 5712,
+    "original_height": 4284,
+    "original_bytes": 14171699,
+    "preview": "images/studio-007.jpg"
+  },
+  {
+    "id": "studio-008",
+    "category": "studio",
+    "filename": "전경스케치/06-4.jpg",
+    "original_width": 5712,
+    "original_height": 4284,
+    "original_bytes": 14171699,
+    "preview": "images/studio-008.jpg"
+  },
+  {
+    "id": "studio-009",
+    "category": "studio",
+    "filename": "06-5.jpg",
+    "original_width": 16313,
+    "original_height": 9452,
+    "original_bytes": 81689324,
+    "preview": "images/studio-009.jpg"
+  },
+  {
+    "id": "studio-010",
+    "category": "studio",
+    "filename": "전경스케치/06-5.jpg",
+    "original_width": 16313,
+    "original_height": 9452,
+    "original_bytes": 81689324,
+    "preview": "images/studio-010.jpg"
+  },
+  {
+    "id": "studio-011",
+    "category": "studio",
+    "filename": "07-1.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 32214623,
+    "preview": "images/studio-011.jpg"
+  },
+  {
+    "id": "studio-012",
+    "category": "studio",
+    "filename": "전경스케치/07-1.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 32214623,
+    "preview": "images/studio-012.jpg"
+  },
+  {
+    "id": "studio-013",
+    "category": "studio",
+    "filename": "07-2.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31422117,
+    "preview": "images/studio-013.jpg"
+  },
+  {
+    "id": "studio-014",
+    "category": "studio",
+    "filename": "전경스케치/07-2.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31422117,
+    "preview": "images/studio-014.jpg"
+  },
+  {
+    "id": "studio-015",
+    "category": "studio",
+    "filename": "07-3.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 36356438,
+    "preview": "images/studio-015.jpg"
+  },
+  {
+    "id": "studio-016",
+    "category": "studio",
+    "filename": "전경스케치/07-3.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 36356438,
+    "preview": "images/studio-016.jpg"
+  },
+  {
+    "id": "studio-017",
+    "category": "studio",
+    "filename": "07-4.jpg",
+    "original_width": 7671,
+    "original_height": 5050,
+    "original_bytes": 51526270,
+    "preview": "images/studio-017.jpg"
+  },
+  {
+    "id": "studio-018",
+    "category": "studio",
+    "filename": "전경스케치/07-4.jpg",
+    "original_width": 7671,
+    "original_height": 5050,
+    "original_bytes": 51526270,
+    "preview": "images/studio-018.jpg"
+  },
+  {
+    "id": "studio-019",
+    "category": "studio",
+    "filename": "07-5.jpg",
+    "original_width": 7115,
+    "original_height": 4255,
+    "original_bytes": 28492430,
+    "preview": "images/studio-019.jpg"
+  },
+  {
+    "id": "studio-020",
+    "category": "studio",
+    "filename": "전경스케치/07-5.jpg",
+    "original_width": 7115,
+    "original_height": 4255,
+    "original_bytes": 28492430,
+    "preview": "images/studio-020.jpg"
+  },
+  {
+    "id": "studio-021",
+    "category": "studio",
+    "filename": "07-6.jpg",
+    "original_width": 7667,
+    "original_height": 4559,
+    "original_bytes": 22600513,
+    "preview": "images/studio-021.jpg"
+  },
+  {
+    "id": "studio-022",
+    "category": "studio",
+    "filename": "전경스케치/07-6.jpg",
+    "original_width": 7667,
+    "original_height": 4559,
+    "original_bytes": 22600513,
+    "preview": "images/studio-022.jpg"
+  },
+  {
+    "id": "studio-023",
+    "category": "studio",
+    "filename": "07-7.jpg",
+    "original_width": 8019,
+    "original_height": 5321,
+    "original_bytes": 30576287,
+    "preview": "images/studio-023.jpg"
+  },
+  {
+    "id": "studio-024",
+    "category": "studio",
+    "filename": "전경스케치/07-7.jpg",
+    "original_width": 8019,
+    "original_height": 5321,
+    "original_bytes": 30576287,
+    "preview": "images/studio-024.jpg"
+  },
+  {
+    "id": "studio-025",
+    "category": "studio",
+    "filename": "07-8.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 34517975,
+    "preview": "images/studio-025.jpg"
+  },
+  {
+    "id": "studio-026",
+    "category": "studio",
+    "filename": "전경스케치/07-8.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 34517975,
+    "preview": "images/studio-026.jpg"
+  },
+  {
+    "id": "studio-027",
+    "category": "studio",
+    "filename": "07-9.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39109774,
+    "preview": "images/studio-027.jpg"
+  },
+  {
+    "id": "studio-028",
+    "category": "studio",
+    "filename": "전경스케치/07-9.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39109774,
+    "preview": "images/studio-028.jpg"
+  },
+  {
+    "id": "studio-029",
+    "category": "studio",
+    "filename": "07-10.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39269951,
+    "preview": "images/studio-029.jpg"
+  },
+  {
+    "id": "studio-030",
+    "category": "studio",
+    "filename": "전경스케치/07-10.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39269951,
+    "preview": "images/studio-030.jpg"
+  },
+  {
+    "id": "studio-031",
+    "category": "studio",
+    "filename": "07-11.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39077201,
+    "preview": "images/studio-031.jpg"
+  },
+  {
+    "id": "studio-032",
+    "category": "studio",
+    "filename": "전경스케치/07-11.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39077201,
+    "preview": "images/studio-032.jpg"
+  },
+  {
+    "id": "studio-033",
+    "category": "studio",
+    "filename": "07-12.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 40630126,
+    "preview": "images/studio-033.jpg"
+  },
+  {
+    "id": "studio-034",
+    "category": "studio",
+    "filename": "전경스케치/07-12.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 40630126,
+    "preview": "images/studio-034.jpg"
+  },
+  {
+    "id": "studio-035",
+    "category": "studio",
+    "filename": "07-13.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 24291042,
+    "preview": "images/studio-035.jpg"
+  },
+  {
+    "id": "studio-036",
+    "category": "studio",
+    "filename": "전경스케치/07-13.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 24291042,
+    "preview": "images/studio-036.jpg"
+  },
+  {
+    "id": "studio-037",
+    "category": "studio",
+    "filename": "07-14.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 25143566,
+    "preview": "images/studio-037.jpg"
+  },
+  {
+    "id": "studio-038",
+    "category": "studio",
+    "filename": "전경스케치/07-14.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 25143566,
+    "preview": "images/studio-038.jpg"
+  },
+  {
+    "id": "studio-039",
+    "category": "studio",
+    "filename": "07-15.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 24428655,
+    "preview": "images/studio-039.jpg"
+  },
+  {
+    "id": "studio-040",
+    "category": "studio",
+    "filename": "전경스케치/07-15.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 24428655,
+    "preview": "images/studio-040.jpg"
+  },
+  {
+    "id": "studio-041",
+    "category": "studio",
+    "filename": "07-16.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 26119639,
+    "preview": "images/studio-041.jpg"
+  },
+  {
+    "id": "studio-042",
+    "category": "studio",
+    "filename": "전경스케치/07-16.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 26119639,
+    "preview": "images/studio-042.jpg"
+  },
+  {
+    "id": "studio-043",
+    "category": "studio",
+    "filename": "07-17.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 23503999,
+    "preview": "images/studio-043.jpg"
+  },
+  {
+    "id": "studio-044",
+    "category": "studio",
+    "filename": "전경스케치/07-17.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 23503999,
+    "preview": "images/studio-044.jpg"
+  },
+  {
+    "id": "studio-045",
+    "category": "studio",
+    "filename": "07-18-1.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 33661457,
+    "preview": "images/studio-045.jpg"
+  },
+  {
+    "id": "studio-046",
+    "category": "studio",
+    "filename": "07-18-2.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 33403390,
+    "preview": "images/studio-046.jpg"
+  },
+  {
+    "id": "studio-047",
+    "category": "studio",
+    "filename": "07-18-3.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 34582784,
+    "preview": "images/studio-047.jpg"
+  },
+  {
+    "id": "studio-048",
+    "category": "studio",
+    "filename": "07-18.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31753973,
+    "preview": "images/studio-048.jpg"
+  },
+  {
+    "id": "studio-049",
+    "category": "studio",
+    "filename": "전경스케치/07-18.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31753973,
+    "preview": "images/studio-049.jpg"
+  },
+  {
+    "id": "studio-050",
+    "category": "studio",
+    "filename": "07-19.jpg",
+    "original_width": 9721,
+    "original_height": 7140,
+    "original_bytes": 40334517,
+    "preview": "images/studio-050.jpg"
+  },
+  {
+    "id": "studio-051",
+    "category": "studio",
+    "filename": "전경스케치/07-19.jpg",
+    "original_width": 9721,
+    "original_height": 7140,
+    "original_bytes": 40334517,
+    "preview": "images/studio-051.jpg"
+  },
+  {
+    "id": "studio-052",
+    "category": "studio",
+    "filename": "07-20-1.jpg",
+    "original_width": 3024,
+    "original_height": 4032,
+    "original_bytes": 11737763,
+    "preview": "images/studio-052.jpg"
+  },
+  {
+    "id": "studio-053",
+    "category": "studio",
+    "filename": "전경스케치/07-20-1.jpg",
+    "original_width": 3024,
+    "original_height": 4032,
+    "original_bytes": 11737763,
+    "preview": "images/studio-053.jpg"
+  },
+  {
+    "id": "studio-054",
+    "category": "studio",
+    "filename": "07-20-2.jpg",
+    "original_width": 3024,
+    "original_height": 4032,
+    "original_bytes": 11230560,
+    "preview": "images/studio-054.jpg"
+  },
+  {
+    "id": "studio-055",
+    "category": "studio",
+    "filename": "전경스케치/07-20-2.jpg",
+    "original_width": 3024,
+    "original_height": 4032,
+    "original_bytes": 11230560,
+    "preview": "images/studio-055.jpg"
+  },
+  {
+    "id": "studio-056",
+    "category": "studio",
+    "filename": "07-20-3.jpg",
+    "original_width": 10106,
+    "original_height": 3902,
+    "original_bytes": 27937408,
+    "preview": "images/studio-056.jpg"
+  },
+  {
+    "id": "studio-057",
+    "category": "studio",
+    "filename": "전경스케치/07-20-3.jpg",
+    "original_width": 10106,
+    "original_height": 3902,
+    "original_bytes": 27937408,
+    "preview": "images/studio-057.jpg"
+  },
+  {
+    "id": "studio-058",
+    "category": "studio",
+    "filename": "07-20.jpg",
+    "original_width": 5464,
+    "original_height": 8074,
+    "original_bytes": 39817485,
+    "preview": "images/studio-058.jpg"
+  },
+  {
+    "id": "studio-059",
+    "category": "studio",
+    "filename": "전경스케치/07-20.jpg",
+    "original_width": 5464,
+    "original_height": 8074,
+    "original_bytes": 39817485,
+    "preview": "images/studio-059.jpg"
+  },
+  {
+    "id": "studio-060",
+    "category": "studio",
+    "filename": "07-21.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 43545631,
+    "preview": "images/studio-060.jpg"
+  },
+  {
+    "id": "studio-061",
+    "category": "studio",
+    "filename": "전경스케치/07-21.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 43545631,
+    "preview": "images/studio-061.jpg"
+  },
+  {
+    "id": "studio-062",
+    "category": "studio",
+    "filename": "07-22.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 40260176,
+    "preview": "images/studio-062.jpg"
+  },
+  {
+    "id": "studio-063",
+    "category": "studio",
+    "filename": "전경스케치/07-22.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 40260176,
+    "preview": "images/studio-063.jpg"
+  },
+  {
+    "id": "studio-064",
+    "category": "studio",
+    "filename": "07-23.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 38396881,
+    "preview": "images/studio-064.jpg"
+  },
+  {
+    "id": "studio-065",
+    "category": "studio",
+    "filename": "전경스케치/07-23.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 38396881,
+    "preview": "images/studio-065.jpg"
+  },
+  {
+    "id": "studio-066",
+    "category": "studio",
+    "filename": "07-24.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 48694015,
+    "preview": "images/studio-066.jpg"
+  },
+  {
+    "id": "studio-067",
+    "category": "studio",
+    "filename": "전경스케치/07-24.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 48694015,
+    "preview": "images/studio-067.jpg"
+  },
+  {
+    "id": "studio-068",
+    "category": "studio",
+    "filename": "07-25.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 46879547,
+    "preview": "images/studio-068.jpg"
+  },
+  {
+    "id": "studio-069",
+    "category": "studio",
+    "filename": "전경스케치/07-25.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 46879547,
+    "preview": "images/studio-069.jpg"
+  },
+  {
+    "id": "studio-070",
+    "category": "studio",
+    "filename": "07-26.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31558412,
+    "preview": "images/studio-070.jpg"
+  },
+  {
+    "id": "studio-071",
+    "category": "studio",
+    "filename": "전경스케치/07-26.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31558412,
+    "preview": "images/studio-071.jpg"
+  },
+  {
+    "id": "studio-072",
+    "category": "studio",
+    "filename": "07-27.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 33955357,
+    "preview": "images/studio-072.jpg"
+  },
+  {
+    "id": "studio-073",
+    "category": "studio",
+    "filename": "전경스케치/07-27.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 33955357,
+    "preview": "images/studio-073.jpg"
+  },
+  {
+    "id": "studio-074",
+    "category": "studio",
+    "filename": "07-28.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 34134060,
+    "preview": "images/studio-074.jpg"
+  },
+  {
+    "id": "studio-075",
+    "category": "studio",
+    "filename": "전경스케치/07-28.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 34134060,
+    "preview": "images/studio-075.jpg"
+  },
+  {
+    "id": "studio-076",
+    "category": "studio",
+    "filename": "07-29.jpg",
+    "original_width": 7882,
+    "original_height": 5298,
+    "original_bytes": 34380837,
+    "preview": "images/studio-076.jpg"
+  },
+  {
+    "id": "studio-077",
+    "category": "studio",
+    "filename": "전경스케치/07-29.jpg",
+    "original_width": 7882,
+    "original_height": 5298,
+    "original_bytes": 34380837,
+    "preview": "images/studio-077.jpg"
+  },
+  {
+    "id": "studio-078",
+    "category": "studio",
+    "filename": "07-30.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 38002642,
+    "preview": "images/studio-078.jpg"
+  },
+  {
+    "id": "studio-079",
+    "category": "studio",
+    "filename": "전경스케치/07-30.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 38002642,
+    "preview": "images/studio-079.jpg"
+  },
+  {
+    "id": "studio-080",
+    "category": "studio",
+    "filename": "07-31.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39176240,
+    "preview": "images/studio-080.jpg"
+  },
+  {
+    "id": "studio-081",
+    "category": "studio",
+    "filename": "전경스케치/07-31.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 39176240,
+    "preview": "images/studio-081.jpg"
+  },
+  {
+    "id": "studio-082",
+    "category": "studio",
+    "filename": "07-32.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 37577403,
+    "preview": "images/studio-082.jpg"
+  },
+  {
+    "id": "studio-083",
+    "category": "studio",
+    "filename": "전경스케치/07-32.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 37577403,
+    "preview": "images/studio-083.jpg"
+  },
+  {
+    "id": "studio-084",
+    "category": "studio",
+    "filename": "07-33.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31983373,
+    "preview": "images/studio-084.jpg"
+  },
+  {
+    "id": "studio-085",
+    "category": "studio",
+    "filename": "전경스케치/07-33.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 31983373,
+    "preview": "images/studio-085.jpg"
+  },
+  {
+    "id": "studio-086",
+    "category": "studio",
+    "filename": "07-34.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 32727191,
+    "preview": "images/studio-086.jpg"
+  },
+  {
+    "id": "studio-087",
+    "category": "studio",
+    "filename": "전경스케치/07-34.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 32727191,
+    "preview": "images/studio-087.jpg"
+  },
+  {
+    "id": "studio-088",
+    "category": "studio",
+    "filename": "08-01.jpg",
+    "original_width": 5069,
+    "original_height": 5170,
+    "original_bytes": 7620267,
+    "preview": "images/studio-088.jpg"
+  },
+  {
+    "id": "studio-089",
+    "category": "studio",
+    "filename": "08-02.jpg",
+    "original_width": 5453,
+    "original_height": 5518,
+    "original_bytes": 11305008,
+    "preview": "images/studio-089.jpg"
+  },
+  {
+    "id": "studio-090",
+    "category": "studio",
+    "filename": "08-03.jpg",
+    "original_width": 3955,
+    "original_height": 4419,
+    "original_bytes": 6426394,
+    "preview": "images/studio-090.jpg"
+  },
+  {
+    "id": "studio-091",
+    "category": "studio",
+    "filename": "08-04.jpg",
+    "original_width": 3740,
+    "original_height": 3448,
+    "original_bytes": 4816163,
+    "preview": "images/studio-091.jpg"
+  },
+  {
+    "id": "studio-092",
+    "category": "studio",
+    "filename": "09-01.jpg",
+    "original_width": 5081,
+    "original_height": 4811,
+    "original_bytes": 9766948,
+    "preview": "images/studio-092.jpg"
+  },
+  {
+    "id": "studio-093",
+    "category": "studio",
+    "filename": "09-02.jpg",
+    "original_width": 5189,
+    "original_height": 4535,
+    "original_bytes": 9160464,
+    "preview": "images/studio-093.jpg"
+  },
+  {
+    "id": "studio-094",
+    "category": "studio",
+    "filename": "09-03.jpg",
+    "original_width": 4193,
+    "original_height": 3989,
+    "original_bytes": 6817850,
+    "preview": "images/studio-094.jpg"
+  },
+  {
+    "id": "studio-095",
+    "category": "studio",
+    "filename": "09-04.jpg",
+    "original_width": 3246,
+    "original_height": 2868,
+    "original_bytes": 4368175,
+    "preview": "images/studio-095.jpg"
+  },
+  {
+    "id": "studio-096",
+    "category": "studio",
+    "filename": "10-01.jpg",
+    "original_width": 4901,
+    "original_height": 4847,
+    "original_bytes": 9990789,
+    "preview": "images/studio-096.jpg"
+  },
+  {
+    "id": "studio-097",
+    "category": "studio",
+    "filename": "10-02.jpg",
+    "original_width": 4554,
+    "original_height": 4031,
+    "original_bytes": 8121035,
+    "preview": "images/studio-097.jpg"
+  },
+  {
+    "id": "studio-098",
+    "category": "studio",
+    "filename": "10-03.jpg",
+    "original_width": 4180,
+    "original_height": 4276,
+    "original_bytes": 7514356,
+    "preview": "images/studio-098.jpg"
+  },
+  {
+    "id": "studio-099",
+    "category": "studio",
+    "filename": "11-01.jpg",
+    "original_width": 5226,
+    "original_height": 5770,
+    "original_bytes": 8730625,
+    "preview": "images/studio-099.jpg"
+  },
+  {
+    "id": "studio-100",
+    "category": "studio",
+    "filename": "11-02.jpg",
+    "original_width": 5464,
+    "original_height": 5698,
+    "original_bytes": 11180222,
+    "preview": "images/studio-100.jpg"
+  },
+  {
+    "id": "studio-101",
+    "category": "studio",
+    "filename": "11-03.jpg",
+    "original_width": 4806,
+    "original_height": 4834,
+    "original_bytes": 8047974,
+    "preview": "images/studio-101.jpg"
+  },
+  {
+    "id": "studio-102",
+    "category": "studio",
+    "filename": "11-04.jpg",
+    "original_width": 3907,
+    "original_height": 3779,
+    "original_bytes": 5086715,
+    "preview": "images/studio-102.jpg"
+  },
+  {
+    "id": "studio-103",
+    "category": "studio",
+    "filename": "12-01.jpg",
+    "original_width": 3020,
+    "original_height": 2688,
+    "original_bytes": 3090485,
+    "preview": "images/studio-103.jpg"
+  },
+  {
+    "id": "studio-104",
+    "category": "studio",
+    "filename": "12-02.jpg",
+    "original_width": 3701,
+    "original_height": 3408,
+    "original_bytes": 4887758,
+    "preview": "images/studio-104.jpg"
+  },
+  {
+    "id": "studio-105",
+    "category": "studio",
+    "filename": "13-01.jpg",
+    "original_width": 4996,
+    "original_height": 4392,
+    "original_bytes": 11842401,
+    "preview": "images/studio-105.jpg"
+  },
+  {
+    "id": "studio-106",
+    "category": "studio",
+    "filename": "13-02.jpg",
+    "original_width": 4542,
+    "original_height": 4019,
+    "original_bytes": 9444946,
+    "preview": "images/studio-106.jpg"
+  },
+  {
+    "id": "studio-107",
+    "category": "studio",
+    "filename": "13-03.jpg",
+    "original_width": 3921,
+    "original_height": 3836,
+    "original_bytes": 10434703,
+    "preview": "images/studio-107.jpg"
+  },
+  {
+    "id": "studio-108",
+    "category": "studio",
+    "filename": "13-04.jpg",
+    "original_width": 3728,
+    "original_height": 3563,
+    "original_bytes": 8752856,
+    "preview": "images/studio-108.jpg"
+  },
+  {
+    "id": "studio-109",
+    "category": "studio",
+    "filename": "13-05.jpg",
+    "original_width": 3944,
+    "original_height": 3923,
+    "original_bytes": 9397329,
+    "preview": "images/studio-109.jpg"
+  },
+  {
+    "id": "studio-110",
+    "category": "studio",
+    "filename": "13-06.jpg",
+    "original_width": 3416,
+    "original_height": 3107,
+    "original_bytes": 4760197,
+    "preview": "images/studio-110.jpg"
+  },
+  {
+    "id": "studio-111",
+    "category": "studio",
+    "filename": "13-07.jpg",
+    "original_width": 3140,
+    "original_height": 3227,
+    "original_bytes": 5175428,
+    "preview": "images/studio-111.jpg"
+  },
+  {
+    "id": "studio-112",
+    "category": "studio",
+    "filename": "14-01.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 26560203,
+    "preview": "images/studio-112.jpg"
+  },
+  {
+    "id": "studio-113",
+    "category": "studio",
+    "filename": "14-02.jpg",
+    "original_width": 6241,
+    "original_height": 4718,
+    "original_bytes": 21355238,
+    "preview": "images/studio-113.jpg"
+  },
+  {
+    "id": "studio-114",
+    "category": "studio",
+    "filename": "14-03.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 22561134,
+    "preview": "images/studio-114.jpg"
+  },
+  {
+    "id": "studio-115",
+    "category": "studio",
+    "filename": "14-04.jpg",
+    "original_width": 6141,
+    "original_height": 5464,
+    "original_bytes": 18021122,
+    "preview": "images/studio-115.jpg"
+  },
+  {
+    "id": "studio-116",
+    "category": "studio",
+    "filename": "15-01.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 26725830,
+    "preview": "images/studio-116.jpg"
+  },
+  {
+    "id": "studio-117",
+    "category": "studio",
+    "filename": "15-02.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 15583335,
+    "preview": "images/studio-117.jpg"
+  },
+  {
+    "id": "studio-118",
+    "category": "studio",
+    "filename": "15-03.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 22457770,
+    "preview": "images/studio-118.jpg"
+  },
+  {
+    "id": "studio-119",
+    "category": "studio",
+    "filename": "16-01.jpg",
+    "original_width": 4790,
+    "original_height": 4391,
+    "original_bytes": 14589615,
+    "preview": "images/studio-119.jpg"
+  },
+  {
+    "id": "studio-120",
+    "category": "studio",
+    "filename": "16-02.jpg",
+    "original_width": 7275,
+    "original_height": 5464,
+    "original_bytes": 23480170,
+    "preview": "images/studio-120.jpg"
+  },
+  {
+    "id": "studio-121",
+    "category": "studio",
+    "filename": "17-01.jpg",
+    "original_width": 5765,
+    "original_height": 5226,
+    "original_bytes": 15941347,
+    "preview": "images/studio-121.jpg"
+  },
+  {
+    "id": "studio-122",
+    "category": "studio",
+    "filename": "17-02.jpg",
+    "original_width": 6094,
+    "original_height": 5020,
+    "original_bytes": 16233171,
+    "preview": "images/studio-122.jpg"
+  },
+  {
+    "id": "studio-123",
+    "category": "studio",
+    "filename": "18-01.jpg",
+    "original_width": 6469,
+    "original_height": 5345,
+    "original_bytes": 21490512,
+    "preview": "images/studio-123.jpg"
+  },
+  {
+    "id": "studio-124",
+    "category": "studio",
+    "filename": "18-02.jpg",
+    "original_width": 7605,
+    "original_height": 5403,
+    "original_bytes": 24652584,
+    "preview": "images/studio-124.jpg"
+  },
+  {
+    "id": "studio-125",
+    "category": "studio",
+    "filename": "18-03.jpg",
+    "original_width": 6173,
+    "original_height": 5169,
+    "original_bytes": 20336376,
+    "preview": "images/studio-125.jpg"
+  },
+  {
+    "id": "studio-126",
+    "category": "studio",
+    "filename": "19-01.jpg",
+    "original_width": 5267,
+    "original_height": 4306,
+    "original_bytes": 11757546,
+    "preview": "images/studio-126.jpg"
+  },
+  {
+    "id": "studio-127",
+    "category": "studio",
+    "filename": "20-01.jpg",
+    "original_width": 7594,
+    "original_height": 5464,
+    "original_bytes": 25301131,
+    "preview": "images/studio-127.jpg"
+  },
+  {
+    "id": "studio-128",
+    "category": "studio",
+    "filename": "20-02.jpg",
+    "original_width": 6580,
+    "original_height": 4644,
+    "original_bytes": 16325247,
+    "preview": "images/studio-128.jpg"
+  },
+  {
+    "id": "studio-129",
+    "category": "studio",
+    "filename": "21-01.jpg",
+    "original_width": 7102,
+    "original_height": 5357,
+    "original_bytes": 21717827,
+    "preview": "images/studio-129.jpg"
+  },
+  {
+    "id": "studio-130",
+    "category": "studio",
+    "filename": "21-02.jpg",
+    "original_width": 7557,
+    "original_height": 5464,
+    "original_bytes": 22912167,
+    "preview": "images/studio-130.jpg"
+  },
+  {
+    "id": "studio-131",
+    "category": "studio",
+    "filename": "21-03.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 24852597,
+    "preview": "images/studio-131.jpg"
+  },
+  {
+    "id": "studio-132",
+    "category": "studio",
+    "filename": "22-01.jpg",
+    "original_width": 7279,
+    "original_height": 5464,
+    "original_bytes": 25844641,
+    "preview": "images/studio-132.jpg"
+  },
+  {
+    "id": "studio-133",
+    "category": "studio",
+    "filename": "22-02.jpg",
+    "original_width": 6563,
+    "original_height": 5464,
+    "original_bytes": 21999233,
+    "preview": "images/studio-133.jpg"
+  },
+  {
+    "id": "studio-134",
+    "category": "studio",
+    "filename": "23-01.jpg",
+    "original_width": 5322,
+    "original_height": 7678,
+    "original_bytes": 22764799,
+    "preview": "images/studio-134.jpg"
+  },
+  {
+    "id": "studio-135",
+    "category": "studio",
+    "filename": "23-02.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 47200630,
+    "preview": "images/studio-135.jpg"
+  },
+  {
+    "id": "studio-136",
+    "category": "studio",
+    "filename": "23-03.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 25726718,
+    "preview": "images/studio-136.jpg"
+  },
+  {
+    "id": "studio-137",
+    "category": "studio",
+    "filename": "23-04.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 25879166,
+    "preview": "images/studio-137.jpg"
+  },
+  {
+    "id": "studio-138",
+    "category": "studio",
+    "filename": "23-05.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 25594795,
+    "preview": "images/studio-138.jpg"
+  },
+  {
+    "id": "studio-139",
+    "category": "studio",
+    "filename": "23-06.jpg",
+    "original_width": 7723,
+    "original_height": 5376,
+    "original_bytes": 22964446,
+    "preview": "images/studio-139.jpg"
+  },
+  {
+    "id": "studio-140",
+    "category": "studio",
+    "filename": "24-01.jpg",
+    "original_width": 6543,
+    "original_height": 5246,
+    "original_bytes": 17105496,
+    "preview": "images/studio-140.jpg"
+  },
+  {
+    "id": "studio-141",
+    "category": "studio",
+    "filename": "24-02.jpg",
+    "original_width": 1463,
+    "original_height": 1487,
+    "original_bytes": 1528038,
+    "preview": "images/studio-141.jpg"
+  },
+  {
+    "id": "studio-142",
+    "category": "studio",
+    "filename": "25-01.jpg",
+    "original_width": 7514,
+    "original_height": 5254,
+    "original_bytes": 22722676,
+    "preview": "images/studio-142.jpg"
+  },
+  {
+    "id": "studio-143",
+    "category": "studio",
+    "filename": "25-02.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 20692708,
+    "preview": "images/studio-143.jpg"
+  },
+  {
+    "id": "studio-144",
+    "category": "studio",
+    "filename": "25-03.jpg",
+    "original_width": 5464,
+    "original_height": 8192,
+    "original_bytes": 27597977,
+    "preview": "images/studio-144.jpg"
+  },
+  {
+    "id": "studio-145",
+    "category": "studio",
+    "filename": "25-04.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 26356855,
+    "preview": "images/studio-145.jpg"
+  },
+  {
+    "id": "studio-146",
+    "category": "studio",
+    "filename": "25-05.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 33453949,
+    "preview": "images/studio-146.jpg"
+  },
+  {
+    "id": "studio-147",
+    "category": "studio",
+    "filename": "25-06.jpg",
+    "original_width": 8192,
+    "original_height": 5464,
+    "original_bytes": 15781729,
+    "preview": "images/studio-147.jpg"
+  },
+  {
+    "id": "ai-001",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_01_52.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1980693,
+    "preview": "images/ai-001.jpg"
+  },
+  {
+    "id": "ai-002",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_20.png",
+    "original_width": 1672,
+    "original_height": 941,
+    "original_bytes": 1374744,
+    "preview": "images/ai-002.jpg"
+  },
+  {
+    "id": "ai-003",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_25.png",
+    "original_width": 1672,
+    "original_height": 941,
+    "original_bytes": 1748068,
+    "preview": "images/ai-003.jpg"
+  },
+  {
+    "id": "ai-004",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_29.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2335193,
+    "preview": "images/ai-004.jpg"
+  },
+  {
+    "id": "ai-005",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_33.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2284948,
+    "preview": "images/ai-005.jpg"
+  },
+  {
+    "id": "ai-006",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_41.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1944895,
+    "preview": "images/ai-006.jpg"
+  },
+  {
+    "id": "ai-007",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_48.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2148027,
+    "preview": "images/ai-007.jpg"
+  },
+  {
+    "id": "ai-008",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_52.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2270906,
+    "preview": "images/ai-008.jpg"
+  },
+  {
+    "id": "ai-009",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_02_58.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2183212,
+    "preview": "images/ai-009.jpg"
+  },
+  {
+    "id": "ai-010",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_03_04.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1729341,
+    "preview": "images/ai-010.jpg"
+  },
+  {
+    "id": "ai-011",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_03_07.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2243509,
+    "preview": "images/ai-011.jpg"
+  },
+  {
+    "id": "ai-012",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_03_13.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 2172568,
+    "preview": "images/ai-012.jpg"
+  },
+  {
+    "id": "ai-013",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_03_20.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1661388,
+    "preview": "images/ai-013.jpg"
+  },
+  {
+    "id": "ai-014",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_03_23.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1743800,
+    "preview": "images/ai-014.jpg"
+  },
+  {
+    "id": "ai-015",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_03_26.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1793370,
+    "preview": "images/ai-015.jpg"
+  },
+  {
+    "id": "ai-016",
+    "category": "ai",
+    "filename": "Codex 이미지 2026년 9월 13일 오후 06_32_37.png",
+    "original_width": 1536,
+    "original_height": 1024,
+    "original_bytes": 1824232,
+    "preview": "images/ai-016.jpg"
+  },
+  {
+    "id": "ai-017",
+    "category": "ai",
+    "filename": "samho-logo-blue-square-300ppi.png",
+    "original_width": 1254,
+    "original_height": 1254,
+    "original_bytes": 1190740,
+    "preview": "images/ai-017.jpg"
+  },
+  {
+    "id": "ai-018",
+    "category": "ai",
+    "filename": "samho-logo-blue-square-300ppi.tif",
+    "original_width": 1254,
+    "original_height": 1254,
+    "original_bytes": 987008,
+    "preview": "images/ai-018.jpg"
+  }
+]
