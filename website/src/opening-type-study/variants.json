@@ -1,0 +1,8 @@
+[
+  {"id":"01","name":"정밀한 균형","english":"Precision","description":"또렷한 한글과 정돈된 영문. 제조기업의 단단함을 가장 자연스럽게 담았습니다.","fonts":"Noto Sans KR 600 · Manrope 600","recommended":true},
+  {"id":"02","name":"여유 있는 절제","english":"Quiet Space","description":"얇은 획과 넓은 글자 사이. 흰 공간 속에서 이름이 차분하게 드러납니다.","fonts":"Noto Sans KR 300 · Montserrat 400","recommended":false},
+  {"id":"03","name":"클래식한 신뢰","english":"Classic Serif","description":"한글과 영문 모두 명조 계열. 오랜 역사를 가진 브랜드처럼 무게감 있게 표현했습니다.","fonts":"Noto Serif KR 500 · Cormorant Garamond 500","recommended":false},
+  {"id":"04","name":"현대적인 클래식","english":"Modern Classic","description":"담백한 한글에 우아한 영문을 조합했습니다. 정갈함과 고급스러운 인상이 함께 남습니다.","fonts":"Noto Sans KR 500 · Cormorant Garamond 500","recommended":true},
+  {"id":"05","name":"따뜻한 품격","english":"Human Touch","description":"부드러운 바탕체와 짧은 구분선. 기술을 다루는 회사의 따뜻하고 성실한 인상입니다.","fonts":"Gowun Batang 700 · Manrope 600","recommended":false},
+  {"id":"06","name":"영문 중심의 인상","english":"Global Presence","description":"영문 이름의 크기와 존재감을 높였습니다. 한글은 작고 단정하게 받쳐줍니다.","fonts":"Noto Sans KR 500 · Manrope 500","recommended":false}
+]

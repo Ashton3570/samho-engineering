@@ -1,0 +1,17 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>삼호 오프닝 · 서체 6종 비교</title><link rel="stylesheet" href="type.css"><link rel="stylesheet" href="study.css"><script src="study.js" defer></script></head>
+<body>
+<header class="study-header"><a class="brand" href="/" aria-label="삼호엔지니어링 홈"><img src="/assets/samho-logo-indigo.svg" alt="" width="32" height="32"><span>SAMHO <small>DESIGN STUDY</small></span></a><span class="draft-note"><i></i> 선택 전 서체 시안</span></header>
+<main class="wrap">
+<section class="intro"><div><p class="overline">OPENING TYPOGRAPHY / 01—06</p><h1>이름에도, 삼호다운 품격을.</h1><p class="intro-copy">한글과 영문 사이의 균형, 획의 두께, 글자 사이의 여백.<br>완성된 모습을 비교하고, 마음에 드는 안을 오프닝으로 재생해보세요.</p></div><div class="intro-aside"><p>먼저 살펴볼 두 가지</p><button data-open="01">01 <strong>정밀한 균형</strong><span>↗</span></button><button data-open="04">04 <strong>현대적인 클래식</strong><span>↗</span></button></div></section>
+<div class="section-label"><span>서체 비교 <small>같은 로고 · 같은 배경 · 서로 다른 인상</small></span><button class="quiet-button" data-open="00">현재 버전 보기 ↗</button></div>
+<section class="option-grid" aria-label="오프닝 서체 6종">{{CARDS}}</section>
+<section class="reading-note"><div><span class="note-index">DESIGN NOTE</span><p>삼호의 원형 로고에는 <b>01번</b>이 가장 안정적입니다.<br>영문에서 조금 더 우아한 인상을 원하면 <b>04번</b>을 추천합니다.</p></div><p>위 카드는 서체를 가까이 비교하는 화면입니다.<br>로고와의 실제 비율은 ‘크게 보기’에서 확인하세요.</p></section>
+<footer><span>SAMHO ENGINEERING · OPENING TYPE STUDY</span><details><summary>사용 서체·라이선스</summary><div>{{FONT_CREDITS}}</div></details></footer>
+</main>
+<dialog id="preview-dialog" aria-labelledby="preview-title">
+<header class="preview-header"><div><span class="overline" id="preview-number">TYPE 01</span><h2 id="preview-title">정밀한 균형</h2></div><button id="close-preview" aria-label="시안 미리보기 닫기">목록으로 <span>×</span></button></header>
+<div class="preview-tools"><nav aria-label="시안 선택"><button data-switch="00">현재</button>{{TABS}}</nav><div class="device-tools" aria-label="화면 크기"><button data-device="desktop" aria-pressed="true">PC</button><button data-device="mobile" aria-pressed="false">모바일</button></div></div>
+<div class="preview-area"><div class="preview-device" id="preview-device"><iframe id="preview-frame" src="frame.html" title="선택한 서체의 실제 오프닝" loading="lazy"></iframe></div></div>
+<footer class="preview-footer"><p id="preview-state" role="status">완성 장면 · 서체를 준비하고 있습니다.</p><div><button id="hold-preview">완성 장면</button><button id="play-preview">4.5초 재생 <span>↻</span></button></div></footer>
+</dialog>
+</body></html>

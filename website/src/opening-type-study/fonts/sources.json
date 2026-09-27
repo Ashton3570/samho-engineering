@@ -1,0 +1,56 @@
+[
+  {
+    "family": "notosanskr",
+    "alias": "Samho Study Sans KR",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf",
+    "source_sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "subset": "sans-kr.woff",
+    "bytes": 8196,
+    "license": "sans-kr-OFL.txt"
+  },
+  {
+    "family": "notoserifkr",
+    "alias": "Samho Study Serif KR",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifkr/NotoSerifKR%5Bwght%5D.ttf",
+    "source_sha256": "11f8d5de6f1b79195efba3828aaa2ec95c1178f5ae976fb23c8d53250a9938f3",
+    "subset": "serif-kr.woff",
+    "bytes": 12140,
+    "license": "serif-kr-OFL.txt"
+  },
+  {
+    "family": "gowunbatang",
+    "alias": "Samho Study Batang KR",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowunbatang/GowunBatang-Bold.ttf",
+    "source_sha256": "dbfcaa646e5831e7478524924f02906f550285a5050699b4e38c9950b3ec4b94",
+    "subset": "batang-kr.woff",
+    "bytes": 4840,
+    "license": "batang-kr-OFL.txt"
+  },
+  {
+    "family": "manrope",
+    "alias": "Samho Study Manrope",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "source_sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+    "subset": "manrope.woff",
+    "bytes": 3588,
+    "license": "manrope-OFL.txt"
+  },
+  {
+    "family": "montserrat",
+    "alias": "Samho Study Montserrat",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf",
+    "source_sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+    "subset": "montserrat.woff",
+    "bytes": 11096,
+    "license": "montserrat-OFL.txt"
+  },
+  {
+    "family": "cormorantgaramond",
+    "alias": "Samho Study Cormorant",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf",
+    "source_sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "subset": "cormorant.woff",
+    "bytes": 8360,
+    "license": "cormorant-OFL.txt"
+  }
+]
