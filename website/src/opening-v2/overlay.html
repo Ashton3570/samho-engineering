@@ -1,0 +1,14 @@
+<section class="logo-opening" id="logo-opening" aria-label="삼호엔지니어링 로고 오프닝" hidden>
+  <div class="logo-mark" aria-hidden="true">{{LOGO_SVG}}</div>
+  <div class="logo-caption"><p>삼호엔지니어링</p><span>SAMHO ENGINEERING</span></div>
+  <button class="logo-skip" type="button">건너뛰기 <span aria-hidden="true">↗</span></button>
+</section>
+<aside class="logo-review" aria-label="로고 오프닝 시안 도구">
+  <div class="logo-toolbar"><span class="logo-review-title">로고 오프닝 <span>3초</span></span><button id="logo-replay" type="button">다시 재생 ↻</button><button id="logo-inspect" type="button" aria-expanded="false" aria-controls="logo-controls">장면 보기</button><a href="/">현재 사이트 ↗</a></div>
+  <div id="logo-controls" hidden>
+    <div class="logo-scenes"><button type="button" data-scene="550">큰 윤곽</button><button type="button" data-scene="1450">로고 완성 중</button><button type="button" data-scene="2350">중앙에 정착</button><button id="logo-slow" type="button">천천히 재생</button></div>
+    <label class="logo-timeline">장면 탐색 <input id="logo-timeline" type="range" min="0" max="3000" step="10" value="3000"><output id="logo-time" for="logo-timeline">3.00초</output></label>
+    <p>흰 배경 · 원본 로고 · 확대에서 정착으로</p>
+  </div>
+</aside>
+<p class="sr-only" id="logo-status" role="status" aria-live="polite"></p>
