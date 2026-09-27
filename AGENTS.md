@@ -17,6 +17,7 @@
 | `output/site-audit/` | 2026-09-22 전체 점검 결과, 배포 기록 |
 | `로고 복원/` | 로고 벡터 복원 작업물 |
 | `베어링 AI 이미지/` | AI로 만든 베어링 이미지 원본 |
+| `유스튜디오/` | 제품·공장 사진 147장의 **웹용 축소본**(긴 변 2560px, JPEG 80, 위치정보 제거). 원본 아님 |
 | `Samho_Website_Plan.html` | 홈페이지 기획서 |
 | `삼호엔지니어링 브로슈어.pdf`, `Samho.pdf` | 회사 제공 자료(콘텐츠 원천) |
 
@@ -33,8 +34,10 @@ python3 -m http.server -d dist 8000   # 로컬 미리보기
 
 ## 저장소에 없는 것 (의도적으로 제외)
 
-- **`유스튜디오/` 제품 사진 원본(147장, 5.8GB)**: GitHub 용량 한도를 넘어서 뺐다. 사이트에 쓰는 웹용 이미지는 이미 `website/dist/assets/`에 들어 있으므로 **빌드·수정에는 필요 없다.**
-  `scripts/prepare_reference_assets.py`만 이 폴더를 읽는다(원본에서 웹용 이미지를 다시 만들 때). 이 스크립트는 원본 없이 실행하지 말 것.
+- **`유스튜디오/` 사진 원본(147장, 5.8GB, 최대 8192px)**: GitHub 용량 한도 때문에 원본 대신 같은 파일명의 **축소본**을 넣었다. 사진 선택·교체·시안 작업에는 충분하다.
+  사이트에 쓰는 웹용 이미지는 이미 `website/dist/assets/`에 있어 빌드에는 사진 폴더가 필요 없다.
+  `scripts/prepare_reference_assets.py`·`prepare_hero_*.py`는 이 폴더를 읽으므로 축소본으로 돌리면 해상도가 낮아진다. 히어로처럼 고해상도가 필요한 이미지는 원본(맥북)으로 다시 만들어야 한다고 사용자에게 알릴 것.
+  원본 ZIP(`전경스케치.zip`, `제품군.zip`)도 제외했다.
 - 원본 묶음 ZIP(`output/samho-source-files-*`, 12GB)과 그 중복본(`output/pdf`, `output/claude-transfer-*`).
 - `website/tmp/`(로컬 검토 캐시).
 
