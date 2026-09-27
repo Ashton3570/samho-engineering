@@ -1,0 +1,139 @@
+{
+  "account": "Ashton3570",
+  "checked_at": "2026-09-22T15:10:06.486953+00:00",
+  "scanner": "Gitleaks 8.30.1, default rules plus literal credential checks",
+  "confirmed_findings": [],
+  "repository_count": 8,
+  "commit_count": 399,
+  "unique_blob_count": 2244,
+  "branch_count": 12,
+  "repositories": [
+    {
+      "name": "Ashton3570/adpoint-website",
+      "private": true,
+      "commits": 42,
+      "refs": [
+        {
+          "ref": "refs/heads/main",
+          "sha": "70da3e6671cef305d6d967873c89fbefdcaa78f5"
+        },
+        {
+          "ref": "refs/heads/portfolio-section",
+          "sha": "3745799e8919e09588e5aacaaf3a2ea187c29ebb"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": false
+    },
+    {
+      "name": "Ashton3570/ashton1",
+      "private": true,
+      "commits": 1,
+      "refs": [
+        {
+          "ref": "refs/heads/main",
+          "sha": "7051f4214d249767e079fa9f0c26cf22bf4f8628"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": false
+    },
+    {
+      "name": "Ashton3570/autopilot",
+      "private": false,
+      "commits": 205,
+      "refs": [
+        {
+          "ref": "refs/heads/main",
+          "sha": "a1ceeef7d910a906673484d92d87bb9db68299db"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": true
+    },
+    {
+      "name": "Ashton3570/bybit-funding",
+      "private": false,
+      "commits": 2,
+      "refs": [
+        {
+          "ref": "refs/heads/claude/bybit-funding-vercel-deploy-p90cy1",
+          "sha": "2124148ec22d0708ac601b2ffbac06c834ea9923"
+        },
+        {
+          "ref": "refs/heads/main",
+          "sha": "b69fd5a2aacc839148ef477562dce544b4a82154"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": true
+    },
+    {
+      "name": "Ashton3570/equity-research-pipeline",
+      "private": true,
+      "commits": 142,
+      "refs": [
+        {
+          "ref": "refs/heads/claude/amd-equity-research-uhbyuy",
+          "sha": "aeb9feec344fbf709d54d173c9db24c53017fd43"
+        },
+        {
+          "ref": "refs/heads/claude/sndk-oljtop",
+          "sha": "4c372109bd4f2f375ad11aec30a34f5eb70a1d6a"
+        },
+        {
+          "ref": "refs/heads/claude/sndk-xfzvj1",
+          "sha": "3f05b109eed160e74cfaf8fd3454ef3419da7539"
+        },
+        {
+          "ref": "refs/heads/main",
+          "sha": "a6ebea865cca164a6abf9e1a131d85da1786fba7"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": false
+    },
+    {
+      "name": "Ashton3570/Equity-Research-Project",
+      "private": true,
+      "commits": 4,
+      "refs": [
+        {
+          "ref": "refs/heads/claude/equity-research-folders-07dknn",
+          "sha": "78354a01783977ee484cbde6fcb927956283cc69"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": false
+    },
+    {
+      "name": "Ashton3570/fart-predictor",
+      "private": true,
+      "commits": 3,
+      "refs": [
+        {
+          "ref": "refs/heads/main",
+          "sha": "33b3a0fddae78bb0a188a9b050c503ce11703889"
+        }
+      ],
+      "status": "no_confirmed_secrets",
+      "github_alerts_available": false
+    },
+    {
+      "name": "Ashton3570/free",
+      "private": true,
+      "commits": 0,
+      "refs": [],
+      "status": "empty",
+      "github_alerts_available": false
+    }
+  ],
+  "limitations": [
+    "Only accessible repositories owned by Ashton3570 and fetchable Git history were included.",
+    "Unreachable deleted branches/commits, Actions logs, issues/comments, release attachments, encrypted content, and OCR of images were not included.",
+    "Pattern-based checks cannot prove the absence of every possible credential.",
+    "GitHub server-side alerts were unavailable for six private repositories; all six were still scanned locally."
+  ],
+  "changes_to_github": false,
+  "secret_values_in_report": false
+}

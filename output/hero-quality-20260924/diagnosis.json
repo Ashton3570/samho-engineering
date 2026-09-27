@@ -1,0 +1,25 @@
+{
+  "current_native": "output/hero-collection-blue-v3-hires/samho-collection-blue-enhanced-native.png",
+  "current_native_pixels": [
+    1536,
+    1024
+  ],
+  "current_export": "output/hero-collection-blue-v3-hires/samho-collection-blue-6144x4096.png",
+  "current_export_pixels": [
+    6144,
+    4096
+  ],
+  "current_export_method": "4x macOS sips interpolation, per existing asset-info.json",
+  "camera_original": "유스튜디오/25-02.jpg",
+  "camera_original_pixels": [
+    8192,
+    5464
+  ],
+  "generated_restoration_pixels": [
+    1536,
+    1024
+  ],
+  "generated_restoration_selected": false,
+  "website_changed": false,
+  "next_step": "Waiting for user choice of dedicated upscaler vs currently available generative restoration."
+}

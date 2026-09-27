@@ -1,0 +1,10 @@
+{
+  "version": 13,
+  "commit": "45787789a925e47ca2ea8708172fa547cb86e276",
+  "project_id": "appgprj_6aa4ee5599348191979190b38afaa57a",
+  "version_id": "appgprj_6aa4ee5599348191979190b38afaa57a~appgver_6d7b54b095288191a98ec1943370366a",
+  "deployment_id": "appgdep_6ab29563c41481919da1b3e5a9a11574",
+  "status": "succeeded",
+  "verified_custom_domain": "https://samhoengineering.com/",
+  "production_url": "https://samho-engineering.goomi3570.chatgpt.site"
+}

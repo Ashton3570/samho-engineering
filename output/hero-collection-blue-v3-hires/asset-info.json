@@ -1,0 +1,49 @@
+{
+  "nativeGeneration": [
+    1536,
+    1024
+  ],
+  "export": [
+    6144,
+    4096
+  ],
+  "method": "Built-in image generation for restrained clarity restoration; macOS sips 4x resampling for export. No claim of recovered source-camera detail.",
+  "webAssets": [
+    {
+      "file": "product-collection-blue-v3-1152.webp",
+      "width": 1152,
+      "height": 768,
+      "bytes": 146752
+    },
+    {
+      "file": "product-collection-blue-v3-1536.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 209838
+    },
+    {
+      "file": "product-collection-blue-v3-1920.webp",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 254378
+    },
+    {
+      "file": "product-collection-blue-v3-2560.webp",
+      "width": 2560,
+      "height": 1707,
+      "bytes": 365080
+    },
+    {
+      "file": "product-collection-blue-v3-3840.webp",
+      "width": 3840,
+      "height": 2560,
+      "bytes": 622202
+    },
+    {
+      "file": "product-collection-blue-v3-768.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 89662
+    }
+  ]
+}

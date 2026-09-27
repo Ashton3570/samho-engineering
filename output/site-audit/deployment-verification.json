@@ -1,0 +1,170 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "url": "https://samhoengineering.com/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 15424
+  },
+  {
+    "path": "/overview/",
+    "status": 200,
+    "url": "https://samhoengineering.com/overview/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 7222
+  },
+  {
+    "path": "/history/",
+    "status": 200,
+    "url": "https://samhoengineering.com/history/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 6320
+  },
+  {
+    "path": "/philosophy/",
+    "status": 200,
+    "url": "https://samhoengineering.com/philosophy/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 7210
+  },
+  {
+    "path": "/products/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 15968
+  },
+  {
+    "path": "/production/",
+    "status": 200,
+    "url": "https://samhoengineering.com/production/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 11901
+  },
+  {
+    "path": "/resources/",
+    "status": 200,
+    "url": "https://samhoengineering.com/resources/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 6944
+  },
+  {
+    "path": "/contact/",
+    "status": 200,
+    "url": "https://samhoengineering.com/contact/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 8576
+  },
+  {
+    "path": "/products/trb-cage/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/trb-cage/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 10688
+  },
+  {
+    "path": "/products/dgbb-cage/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/dgbb-cage/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 10641
+  },
+  {
+    "path": "/products/dgbb-shield/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/dgbb-shield/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 7992
+  },
+  {
+    "path": "/products/pronged-cage/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/pronged-cage/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 10717
+  },
+  {
+    "path": "/products/strut-raceway/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/strut-raceway/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 7030
+  },
+  {
+    "path": "/products/acbb-cage/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/acbb-cage/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 10003
+  },
+  {
+    "path": "/products/wheel-cover/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/wheel-cover/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 7964
+  },
+  {
+    "path": "/products/brass-cage/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/brass-cage/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 9603
+  },
+  {
+    "path": "/products/stamped-raceway/",
+    "status": 200,
+    "url": "https://samhoengineering.com/products/stamped-raceway/",
+    "type": "text/html",
+    "matches_local": false,
+    "bytes": 6728
+  },
+  {
+    "path": "/assets/opening.js?v=20260923",
+    "status": 200,
+    "url": "https://samhoengineering.com/assets/opening.js?v=20260923",
+    "type": "text/javascript",
+    "matches_local": true,
+    "bytes": 6432
+  },
+  {
+    "path": "/assets/opening.css?v=20260923",
+    "status": 200,
+    "url": "https://samhoengineering.com/assets/opening.css?v=20260923",
+    "type": "text/css",
+    "matches_local": true,
+    "bytes": 4831
+  },
+  {
+    "path": "/assets/hero-gallery.css?v=20260923a",
+    "status": 200,
+    "url": "https://samhoengineering.com/assets/hero-gallery.css?v=20260923a",
+    "type": "text/css",
+    "matches_local": true,
+    "bytes": 2923
+  },
+  {
+    "path": "/assets/hero/product-collection-blue-v3-1920.webp",
+    "status": 200,
+    "url": "https://samhoengineering.com/assets/hero/product-collection-blue-v3-1920.webp",
+    "type": "application/octet-stream",
+    "matches_local": true,
+    "bytes": 254378
+  }
+]
