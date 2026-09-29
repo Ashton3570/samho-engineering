@@ -80,7 +80,7 @@ def product_row(p):
 
 
 def build():
-    hero_image = '<img src="/assets/hero/product-collection-blue-v3-1920.webp" srcset="/assets/hero/product-collection-blue-v3-768.webp 768w, /assets/hero/product-collection-blue-v3-1152.webp 1152w, /assets/hero/product-collection-blue-v3-1536.webp 1536w, /assets/hero/product-collection-blue-v3-1920.webp 1920w, /assets/hero/product-collection-blue-v3-2560.webp 2560w, /assets/hero/product-collection-blue-v3-3840.webp 3840w" sizes="(max-width:560px) 1125px, (max-width:820px) 1100px, 100vw" alt="블루 배경 위에 다양한 크기의 삼호 베어링 케이지와 링 부품을 배치한 제품 사진 기반 AI 편집 이미지" width="6144" height="4096" fetchpriority="high">'
+    hero_image = '<img src="/assets/hero/product-collection-blue-v3-1920.webp" srcset="/assets/hero/product-collection-blue-v3-768.webp 768w, /assets/hero/product-collection-blue-v3-1152.webp 1152w, /assets/hero/product-collection-blue-v3-1536.webp 1536w, /assets/hero/product-collection-blue-v3-1920.webp 1920w, /assets/hero/product-collection-blue-v3-2560.webp 2560w, /assets/hero/product-collection-blue-v3-3840.webp 3840w" sizes="(max-width:560px) 1125px, (max-width:820px) 1100px, 100vw" alt="블루 배경에 배치된 다양한 크기의 베어링 케이지와 링 부품" width="6144" height="4096" fetchpriority="high">'
     body = (ROOT/'src/hero-gallery.html').read_text().replace('{{HERO_IMAGE}}', hero_image) + '''
 <section class="intro-strip wrap"><p>1979년의 시작부터 오늘까지.<br>고객의 기준을 부품의 완성도로 이어갑니다.</p><a class="text-link" href="/overview/">삼호엔지니어링 소개 <span aria-hidden="true">↗</span></a></section>
 <section class="section wrap" id="products"><div class="section-head"><div><p class="eyebrow">생산 제품</p><h2>베어링을 이루는,<br>각 부품의 전문성.</h2></div><p>케이지부터 실드, 레이스웨이까지.<br>제품군별 생산 범위와 적용 구분을 확인하세요.</p></div><div class="family-list">'''

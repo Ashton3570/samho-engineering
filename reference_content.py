@@ -17,7 +17,8 @@ def img(key, sizes='(max-width: 820px) calc(100vw - 40px), 600px', eager=False):
 def figure(key,caption,cls='',zoom=False,eager=False):
  content=img(key,eager=eager)
  if zoom: content=f'<a href="/assets/reference/{key}-1440.webp" target="_blank" rel="noopener" aria-label="{escape(caption)} 크게 보기 (새 탭)">{content}</a>'
- return f'<figure class="reference-figure {cls}">{content}<figcaption>{caption}{" · 클릭하면 크게 볼 수 있습니다" if zoom else ""}</figcaption></figure>'
+ caption_html = f'<figcaption>{caption}{" · 클릭하면 크게 볼 수 있습니다" if zoom else ""}</figcaption>' if caption else ''
+ return f'<figure class="reference-figure {cls}">{content}{caption_html}</figure>'
 
 def thumbnail(p):
  keys=PRODUCT_MEDIA.get(p['id'],[])
@@ -32,7 +33,7 @@ def product_media(p):
  return html
 
 def company_visual():
- return '<section class="wrap section material-story">'+figure('cage-concept','케이지 제품군 콘셉트 · AI 생성 이미지')+'''<div><p class="eyebrow">베어링을 이루는 부품</p><h2>작은 부품에 쌓아온<br>제조의 경험.</h2><p>삼호엔지니어링은 케이지, 실드·커버·캡, 레이스웨이를 생산합니다. 1987년 베어링 부품 생산을 시작한 이후 제품군과 생산 기반을 넓혀왔습니다.</p><a class="text-link" href="/products/">생산 품목과 규격 보기 ↗</a></div></section>'''
+ return '<section class="wrap section material-story">'+figure('cage-concept','')+'''<div><p class="eyebrow">베어링을 이루는 부품</p><h2>작은 부품에 쌓아온<br>제조의 경험.</h2><p>삼호엔지니어링은 케이지, 실드·커버·캡, 레이스웨이를 생산합니다. 1987년 베어링 부품 생산을 시작한 이후 제품군과 생산 기반을 넓혀왔습니다.</p><a class="text-link" href="/products/">생산 품목과 규격 보기 ↗</a></div></section>'''
 
 def production_content():
  return '''<section class="section wrap topic-section" id="process"><div class="section-head"><div><p class="eyebrow">생산 현장</p><h2>소재와 금형에서<br>부품의 형상으로.</h2></div><p>소재 보관부터 케이지 성형까지.<br>삼호엔지니어링의 생산 현장을 소개합니다.</p></div><div class="field-grid">'''+figure('materials','코일 소재 보관')+figure('forming','금형을 이용한 케이지 성형')+'''</div><div class="field-notes"><article><h3>제조 공정</h3><p>TRB 케이지 생산에는 2011년 원펀치 금형을 도입했습니다. 프레스 부품 제조에서 출발한 경험을 베어링 부품 생산으로 이어갑니다.</p></article><article><h3>주요 설비</h3><p>케이지 성형을 위한 금형과 설비를 운영합니다. 제품군에 맞춘 생산 기반을 바탕으로 부품을 제조합니다.</p></article></div><p class="source-note">금형 도입 연혁: 회사 소개서 2025.10.01 및 제공 브로슈어 2쪽.</p></section>

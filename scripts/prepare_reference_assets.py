@@ -22,7 +22,7 @@ items={
 manifest={}
 for key,(file,alt) in items.items(): manifest[key]={'source':str((studio/file).relative_to(PROJECT)),'alt':alt,'kind':'supplied'}
 files=json.loads((ROOT/'tmp/material-review/ai-files.json').read_text())
-manifest['cage-concept']={'source':files[0],'alt':'여러 크기의 케이지를 배치한 콘셉트 이미지','kind':'ai'}
+manifest['cage-concept']={'source':files[0],'alt':'다양한 크기의 베어링 케이지','kind':'ai'}
 out=ROOT/'dist/assets/reference';out.mkdir(parents=True,exist_ok=True)
 for key,item in manifest.items():
  with Image.open(PROJECT/item['source']) as source:
