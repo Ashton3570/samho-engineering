@@ -51,13 +51,13 @@ def page(path, title, body, active='', company=False, description=''):
 <title>{e(title)} | 삼호엔지니어링</title><meta name="description" content="{e(description or title)}">
 <meta name="theme-color" content="#ffffff"><meta property="og:title" content="{e(title)} | 삼호엔지니어링"><meta property="og:description" content="{e(description or title)}">
 <link rel="canonical" href="https://samhoengineering.com/{path + '/' if path else ''}">
-<link rel="icon" href="/designs/v4/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=20260929a">
+<link rel="icon" href="/designs/v4/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=20260929b">
 <script src="/assets/products.js" defer></script><script src="/assets/site.js?v=20260922e" defer></script></head>
 <body><a class="skip" href="#main">본문 바로가기</a>
 <header class="header"><div class="header-inner wrap"><a class="brand header-brand" href="/" aria-label="삼호엔지니어링 홈"><img class="header-symbol" src="/assets/samho-logo-indigo.svg" width="48" height="48" alt=""><img class="header-wordmark" src="/assets/samho-wordmark.svg" width="486" height="100" alt="SAMHO"></a><nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav><a class="header-contact" href="/contact/">제작 문의 <span aria-hidden="true">↗</span></a><button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div></header>
 <dialog id="mobile-menu" aria-labelledby="menu-title"><div class="menu-top"><h2 id="menu-title">전체 메뉴</h2><button data-close aria-label="메뉴 닫기">닫기 ×</button></div><nav aria-label="모바일 메뉴">{nav}<a href="/contact/">제작 문의</a></nav><div class="menu-company">{''.join(link(p,t) for p,t in COMPANY)}</div><p>베어링 부품 전문 제조 · Since 1979</p></dialog>
 <main id="main">{body}</main>
-<footer class="footer wrap"><div class="footer-main"><a class="brand" href="/"><span>SAMHO</span><small>삼호엔지니어링</small></a><p>베어링 부품 전문 제조<br>경상북도 영주시 장수면 용주로 88-60 (갈산리)<br>영주공장 <a href="tel:0547088000">054-708-8000</a></p><nav aria-label="하단 메뉴">{''.join(link(p,t) for p,t in NAV)}<a href="/contact/">제작 문의</a></nav></div><div class="footer-bottom"><p>© 2026 SAMHO ENGINEERING</p><span>기본에 충실한 기술, 신뢰로 이어지는 품질.</span><a href="#main">맨 위로 ↑</a></div></footer>
+<footer class="footer wrap"><div class="footer-main"><a class="brand" href="/"><span>SAMHO</span><small>삼호엔지니어링</small></a><p>베어링 부품 전문 제조<br>경상북도 영주시 장수면 용주로 88-60 (갈산리)<br>영주공장 <a href="tel:0547088000">054-708-8000</a></p><nav aria-label="하단 메뉴">{''.join(link(p,t) for p,t in NAV)}<a href="/contact/">제작 문의</a></nav></div><div class="footer-bottom"><div class="footer-credit"><p>© Copyright 2026 삼호엔지니어링 All rights reserved.</p><p class="footer-maker">made by ADPOINT.</p></div><span>기본에 충실한 기술, 신뢰로 이어지는 품질.</span><a href="#main">맨 위로 ↑</a></div></footer>
 <div id="status" class="toast" role="status" aria-live="polite"></div></body></html>'''
     if not path:
         html = with_home_opening(html)
