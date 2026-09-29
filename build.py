@@ -36,7 +36,7 @@ def plant_photo(name, title, alt, height):
 
 
 def cta():
-    return '<section class="contact-band"><div class="wrap"><div><p class="eyebrow">제작 상담</p><h2>필요한 부품에서,<br>다음 이야기를 시작합니다.</h2></div><a class="button primary" href="/contact/">제작 문의 <span aria-hidden="true">↗</span></a></div></section>'
+    return '<section class="contact-band"><div class="wrap"><div><p class="eyebrow">제작 상담</p><h2>필요한 부품, 사양부터 생산 일정까지,<br>삼호엔지니어링과 상의하세요.</h2></div><a class="button primary" href="/contact/">제작 문의 <span aria-hidden="true">↗</span></a></div></section>'
 
 
 def page(path, title, body, active='', company=False, description=''):
