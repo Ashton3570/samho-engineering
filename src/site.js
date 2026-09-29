@@ -39,7 +39,7 @@
 
   // Keep old bookmarked entry points useful after separating the pages.
   if (location.pathname === '/') {
-    const oldRoutes = { '#contact':'/contact/', '#finder':'/products/#finder', '#support':'/contact/#support' };
+    const oldRoutes = { '#contact':'/contact/', '#finder':'/products/', '#support':'/contact/#support' };
     if (oldRoutes[location.hash]) location.replace(oldRoutes[location.hash]);
   }
 
