@@ -7,7 +7,8 @@ ASSETS=json.loads((ROOT/'src/materials.json').read_text())
 PRODUCT_MEDIA={
  'trb-cage':['trb-main','trb-detail'], 'dgbb-cage':['dgbb-main','dgbb-detail'],
  'dgbb-shield':['shield-main','shield-detail'], 'pronged-cage':['pronged-main','pronged-detail'],
- 'strut-raceway':['strut-main'], 'acbb-cage':['acbb-main'], 'wheel-cover':['wheel-main','wheel-detail']}
+ 'strut-raceway':['strut-main'], 'acbb-cage':['acbb-main'], 'wheel-cover':['wheel-main','wheel-detail'],
+ 'brass-cage':['brass-cage-main'], 'stamped-raceway':['stamped-raceway-main']}
 
 def img(key, sizes='(max-width: 820px) calc(100vw - 40px), 600px', eager=False):
  a=ASSETS[key]; v=a['variants']
@@ -16,7 +17,7 @@ def img(key, sizes='(max-width: 820px) calc(100vw - 40px), 600px', eager=False):
 
 def figure(key,caption,cls='',zoom=False,eager=False):
  content=img(key,eager=eager)
- if zoom: content=f'<a href="/assets/reference/{key}-1440.webp" target="_blank" rel="noopener" aria-label="{escape(caption)} 크게 보기 (새 탭)">{content}</a>'
+ if zoom: content=f'<a href="/assets/reference/{ASSETS[key]["variants"][-1]["file"]}" target="_blank" rel="noopener" aria-label="{escape(caption)} 크게 보기 (새 탭)">{content}</a>'
  caption_html = f'<figcaption>{caption}{" · 클릭하면 크게 볼 수 있습니다" if zoom else ""}</figcaption>' if caption else ''
  return f'<figure class="reference-figure {cls}">{content}{caption_html}</figure>'
 

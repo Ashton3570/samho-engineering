@@ -23,8 +23,19 @@ manifest={}
 for key,(file,alt) in items.items(): manifest[key]={'source':str((studio/file).relative_to(PROJECT)),'alt':alt,'kind':'supplied'}
 files=json.loads((ROOT/'tmp/material-review/ai-files.json').read_text())
 manifest['cage-concept']={'source':files[0],'alt':'다양한 크기의 베어링 케이지','kind':'ai'}
+# These supplied photos replace the former ACBB image and fill two empty products.
+imports=ROOT/'src/reference-imports'
+for key,alt in {'acbb-main':'중장비 베어링용 ACBB 케이지','brass-cage-main':'ACBB 황동 케이지','stamped-raceway-main':'프레스 성형 레이스웨이'}.items():
+ manifest[key]={'source':str((imports/f'{key}-1440.webp').relative_to(PROJECT)),'alt':alt,'kind':'supplied'}
 out=ROOT/'dist/assets/reference';out.mkdir(parents=True,exist_ok=True)
 for key,item in manifest.items():
+ if (PROJECT/item['source']).parent == imports:
+  item['variants']=[]
+  for w in (480,960,1440):
+   photo=imports/f'{key}-{w}.webp'
+   (out/photo.name).write_bytes(photo.read_bytes())
+   with Image.open(photo) as im: item['variants'].append({'width':im.width,'height':im.height,'file':photo.name})
+  continue
  with Image.open(PROJECT/item['source']) as source:
   source.draft('RGB',(1800,1800))
   im=ImageOps.exif_transpose(source).convert('RGB')
@@ -34,5 +45,10 @@ for key,item in manifest.items():
    copy.save(out/f'{key}-{w}.webp','WEBP',quality=84,method=6)
    sizes.append({'width':copy.width,'height':copy.height,'file':f'{key}-{w}.webp'})
   item['variants']=sizes
+# Preserve approved white-background variants when rebuilding reference media.
+white=ROOT/'src/product-white'
+if (white/'manifest.json').exists():
+ manifest.update(json.loads((white/'manifest.json').read_text()))
+ for photo in white.glob('*.webp'): (out/photo.name).write_bytes(photo.read_bytes())
 (ROOT/'src/materials.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 print(f'{len(manifest)} sources, {len(manifest)*3} optimized WebP derivatives')

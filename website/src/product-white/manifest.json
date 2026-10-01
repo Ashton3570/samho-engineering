@@ -1,0 +1,255 @@
+{
+  "trb-main": {
+    "source": "유스튜디오/20-02.jpg",
+    "alt": "TRB 케이지 제품군",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 339,
+        "file": "trb-main-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 678,
+        "file": "trb-main-white-v1-960.webp"
+      },
+      {
+        "width": 1440,
+        "height": 1017,
+        "file": "trb-main-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "trb-detail": {
+    "source": "유스튜디오/09-01.jpg",
+    "alt": "TRB 케이지 정면",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 455,
+        "file": "trb-detail-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 909,
+        "file": "trb-detail-white-v1-960.webp"
+      },
+      {
+        "width": 1289,
+        "height": 1221,
+        "file": "trb-detail-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "dgbb-main": {
+    "source": "유스튜디오/21-01.jpg",
+    "alt": "DGBB 케이지 제품군",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 363,
+        "file": "dgbb-main-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 725,
+        "file": "dgbb-main-white-v1-960.webp"
+      },
+      {
+        "width": 1440,
+        "height": 1088,
+        "file": "dgbb-main-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "dgbb-detail": {
+    "source": "유스튜디오/08-01.jpg",
+    "alt": "DGBB 케이지 정면",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 490,
+        "file": "dgbb-detail-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 981,
+        "file": "dgbb-detail-white-v1-960.webp"
+      },
+      {
+        "width": 1241,
+        "height": 1268,
+        "file": "dgbb-detail-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "shield-main": {
+    "source": "유스튜디오/23-02.jpg",
+    "alt": "DGBB 실드 제품군",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 320,
+        "file": "shield-main-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "file": "shield-main-white-v1-960.webp"
+      },
+      {
+        "width": 1440,
+        "height": 961,
+        "file": "shield-main-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "shield-detail": {
+    "source": "유스튜디오/10-02.jpg",
+    "alt": "DGBB 실드 정면",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 425,
+        "file": "shield-detail-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 850,
+        "file": "shield-detail-white-v1-960.webp"
+      },
+      {
+        "width": 1333,
+        "height": 1180,
+        "file": "shield-detail-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "pronged-main": {
+    "source": "유스튜디오/24-01.jpg",
+    "alt": "프롱 타입 케이지 제품군",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 384,
+        "file": "pronged-main-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 768,
+        "file": "pronged-main-white-v1-960.webp"
+      },
+      {
+        "width": 1402,
+        "height": 1122,
+        "file": "pronged-main-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "pronged-detail": {
+    "source": "유스튜디오/12-02.jpg",
+    "alt": "프롱 타입 케이지 정면",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 442,
+        "file": "pronged-detail-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 884,
+        "file": "pronged-detail-white-v1-960.webp"
+      },
+      {
+        "width": 1307,
+        "height": 1203,
+        "file": "pronged-detail-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "strut-main": {
+    "source": "유스튜디오/13-02.jpg",
+    "alt": "스트럿 베어링 레이스웨이",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 425,
+        "file": "strut-main-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 850,
+        "file": "strut-main-white-v1-960.webp"
+      },
+      {
+        "width": 1333,
+        "height": 1180,
+        "file": "strut-main-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "wheel-main": {
+    "source": "유스튜디오/13-03.jpg",
+    "alt": "휠 베어링 커버·캡",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 469,
+        "file": "wheel-main-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 939,
+        "file": "wheel-main-white-v1-960.webp"
+      },
+      {
+        "width": 1268,
+        "height": 1240,
+        "file": "wheel-main-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  },
+  "wheel-detail": {
+    "source": "유스튜디오/13-06.jpg",
+    "alt": "휠 베어링 커버·캡 형상",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 437,
+        "file": "wheel-detail-white-v1-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 873,
+        "file": "wheel-detail-white-v1-960.webp"
+      },
+      {
+        "width": 1315,
+        "height": 1196,
+        "file": "wheel-detail-white-v1-1440.webp"
+      }
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
+  }
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "source": "유스튜디오/25-04.jpg",
+    "source_dimensions": [
+      8192,
+      5464
+    ],
+    "key": "collection",
+    "name": "제품 컬렉션",
+    "alt": "크기가 다른 케이지, 실드와 링 부품 컬렉션",
+    "zoom": 1.1,
+    "variants": [
+      {
+        "file": "collection-v1-768.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "file": "collection-v1-1280.webp",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "file": "collection-v1-1920.webp",
+        "width": 1920,
+        "height": 1281
+      },
+      {
+        "file": "collection-v1-2560.webp",
+        "width": 2560,
+        "height": 1708
+      },
+      {
+        "file": "collection-v1-4608.webp",
+        "width": 4608,
+        "height": 3074
+      }
+    ]
+  },
+  {
+    "source": "유스튜디오/07-9.jpg",
+    "source_dimensions": [
+      8192,
+      5464
+    ],
+    "key": "forming",
+    "name": "성형 현장",
+    "alt": "성형 설비에 놓인 케이지",
+    "zoom": 1.08,
+    "variants": [
+      {
+        "file": "forming-v1-768.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "file": "forming-v1-1280.webp",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "file": "forming-v1-1920.webp",
+        "width": 1920,
+        "height": 1281
+      },
+      {
+        "file": "forming-v1-2560.webp",
+        "width": 2560,
+        "height": 1708
+      },
+      {
+        "file": "forming-v1-4608.webp",
+        "width": 4608,
+        "height": 3074
+      }
+    ]
+  },
+  {
+    "source": "유스튜디오/07-14.jpg",
+    "source_dimensions": [
+      8192,
+      5464
+    ],
+    "key": "hands",
+    "name": "작업자의 손",
+    "alt": "파란 장갑을 낀 작업자가 케이지를 확인하는 모습",
+    "zoom": 1.07,
+    "variants": [
+      {
+        "file": "hands-v1-768.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "file": "hands-v1-1280.webp",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "file": "hands-v1-1920.webp",
+        "width": 1920,
+        "height": 1281
+      },
+      {
+        "file": "hands-v1-2560.webp",
+        "width": 2560,
+        "height": 1708
+      },
+      {
+        "file": "hands-v1-4608.webp",
+        "width": 4608,
+        "height": 3074
+      }
+    ]
+  },
+  {
+    "source": "유스튜디오/07-29.jpg",
+    "source_dimensions": [
+      7882,
+      5298
+    ],
+    "key": "measurement",
+    "name": "정밀 측정",
+    "alt": "측정 장비 위에 놓인 케이지",
+    "zoom": 1.1,
+    "variants": [
+      {
+        "file": "measurement-v1-768.webp",
+        "width": 768,
+        "height": 516
+      },
+      {
+        "file": "measurement-v1-1280.webp",
+        "width": 1280,
+        "height": 860
+      },
+      {
+        "file": "measurement-v1-1920.webp",
+        "width": 1920,
+        "height": 1291
+      },
+      {
+        "file": "measurement-v1-2560.webp",
+        "width": 2560,
+        "height": 1721
+      },
+      {
+        "file": "measurement-v1-4608.webp",
+        "width": 4608,
+        "height": 3097
+      }
+    ]
+  }
+]

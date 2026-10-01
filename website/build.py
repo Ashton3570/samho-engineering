@@ -7,6 +7,7 @@ from html import escape as e
 import json
 import re
 from opening_component import with_home_opening
+from hero_component import hero_markup
 from reference_content import thumbnail, product_media, company_visual, production_content, resources_content, img
 
 ROOT = Path(__file__).resolve().parent
@@ -51,7 +52,8 @@ def page(path, title, body, active='', company=False, description=''):
 <title>{e(title)} | 삼호엔지니어링</title><meta name="description" content="{e(description or title)}">
 <meta name="theme-color" content="#ffffff"><meta property="og:title" content="{e(title)} | 삼호엔지니어링"><meta property="og:description" content="{e(description or title)}">
 <link rel="canonical" href="https://samhoengineering.com/{path + '/' if path else ''}">
-<link rel="icon" href="/designs/v4/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=20260929c">
+<link rel="icon" href="/designs/v4/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=20260930-align2">
+<link rel="stylesheet" href="/assets/scroll-progress.css?v=20260930-1"><script src="/assets/scroll-progress.js?v=20260930-1" defer></script>
 <script src="/assets/products.js" defer></script><script src="/assets/site.js?v=20260929b" defer></script></head>
 <body><a class="skip" href="#main">본문 바로가기</a>
 <header class="header"><div class="header-inner wrap"><a class="brand header-brand" href="/" aria-label="삼호엔지니어링 홈"><img class="header-symbol" src="/assets/samho-logo-indigo.svg" width="48" height="48" alt=""><img class="header-wordmark" src="/assets/samho-wordmark.svg" width="486" height="100" alt="SAMHO"></a><nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav><a class="header-contact" href="/contact/">제작 문의 <span aria-hidden="true">↗</span></a><button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div></header>
@@ -61,9 +63,12 @@ def page(path, title, body, active='', company=False, description=''):
 <div id="status" class="toast" role="status" aria-live="polite"></div></body></html>'''
     if not path:
         html = with_home_opening(html)
-        html = html.replace('<body>', '<body class="home-gallery">', 1)
-        html = html.replace('</head>', '<link rel="stylesheet" href="/assets/hero-gallery.css?v=20260923a"></head>')
-    dest = OUT / path / 'index.html'
+        html = html.replace('<body>', '<body class="home-cinematic">', 1)
+        html = html.replace('</head>', '<link rel="stylesheet" href="/assets/hero-cinema.css?v=20260930-live2"><script src="/assets/hero-cinema.js?v=20260930-live2" defer></script></head>')
+    # Keep the fixed progress indicator outside the home opening's inert wrapper.
+    progress = '<div class="page-progress" role="progressbar" aria-label="페이지 스크롤 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="page-progress-fill"></span></div>'
+    html = re.sub(r'(<body\b[^>]*>)', lambda match: match.group(1) + progress, html, count=1)
+    dest = OUT / path / 'index.html' 
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(html)
 
@@ -81,7 +86,7 @@ def product_row(p):
 
 def build():
     hero_image = '<img src="/assets/hero/product-collection-blue-v3-1920.webp" srcset="/assets/hero/product-collection-blue-v3-768.webp 768w, /assets/hero/product-collection-blue-v3-1152.webp 1152w, /assets/hero/product-collection-blue-v3-1536.webp 1536w, /assets/hero/product-collection-blue-v3-1920.webp 1920w, /assets/hero/product-collection-blue-v3-2560.webp 2560w, /assets/hero/product-collection-blue-v3-3840.webp 3840w" sizes="(max-width:560px) 1125px, (max-width:820px) 1100px, 100vw" alt="블루 배경에 배치된 다양한 크기의 베어링 케이지와 링 부품" width="6144" height="4096" fetchpriority="high">'
-    body = (ROOT/'src/hero-gallery.html').read_text().replace('{{HERO_IMAGE}}', hero_image) + '''
+    body = hero_markup() + '''
 <section class="intro-strip wrap"><p>1979년의 시작부터 오늘까지.<br>고객의 기준을 부품의 완성도로 이어갑니다.</p><a class="text-link" href="/overview/">삼호엔지니어링 소개 <span aria-hidden="true">↗</span></a></section>
 <section class="section wrap" id="products"><div class="section-head"><div><p class="eyebrow">생산 제품</p><h2>베어링을 이루는,<br>각 부품의 전문성.</h2></div><p>케이지부터 실드, 레이스웨이까지.<br>제품군별 생산 범위와 적용 구분을 확인하세요.</p></div><div class="family-list">'''
     for i,(group,title) in enumerate(GROUPS.items(),1):
@@ -142,8 +147,16 @@ def build():
     for image in (ROOT/'src/hero').glob('*.webp'):
         (assets/'hero'/image.name).write_bytes(image.read_bytes())
     (assets/'products.js').write_text('window.SamhoProducts='+json.dumps(PRODUCTS,ensure_ascii=False)+';\n')
-    for name in ['site.css','site.js','hero-gallery.css']:
+    for name in ['site.css','site.js','hero-gallery.css','hero-cinema.css','hero-cinema.js','scroll-progress.css','scroll-progress.js']:
         (assets/name).write_text((ROOT/'src'/name).read_text())
+    # Keep the user-supplied product photos available on every build.
+    (assets/'reference').mkdir(exist_ok=True)
+    for source_dir in ['reference-imports','product-white']:
+        for image in (ROOT/'src'/source_dir).glob('*.webp'):
+            (assets/'reference'/image.name).write_bytes(image.read_bytes())
+    (assets/'hero-live').mkdir(exist_ok=True)
+    for image in (ROOT/'src/hero-live').glob('*.webp'):
+        (assets/'hero-live'/image.name).write_bytes(image.read_bytes())
     downloads=OUT/'downloads'
     downloads.mkdir(exist_ok=True)
     (downloads/'consultation-checklist.txt').write_text('삼호엔지니어링 | 제작 상담 체크리스트\n\n□ 부품군·제품명 또는 기존 품번\n□ 도면 번호·개정 정보\n□ 외경·주요 치수·재질·공차·표면처리\n□ 필요 수량·연간 예상 물량\n□ 희망 납기\n□ 회사·담당자·회신 연락처\n\n이 문서는 상담 준비를 위한 체크리스트이며, 접수 또는 주문 완료를 의미하지 않습니다.\n',encoding='utf-8-sig')

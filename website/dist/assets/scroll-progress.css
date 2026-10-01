@@ -1,0 +1,4 @@
+/* Fixed above the masthead; no layout changes or delayed interpolation. */
+.page-progress{position:fixed;inset:0 0 auto;height:3px;z-index:80;background:transparent;pointer-events:none;contain:layout paint}
+.page-progress-fill{display:block;width:100%;height:100%;background:#2878f0;transform:scaleX(0);transform-origin:left center;will-change:transform}
+html.opening-pending .page-progress,body.logo-active .page-progress{opacity:0}

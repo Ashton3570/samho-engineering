@@ -7,19 +7,20 @@
       {
         "width": 480,
         "height": 339,
-        "file": "trb-main-480.webp"
+        "file": "trb-main-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 678,
-        "file": "trb-main-960.webp"
+        "file": "trb-main-white-v1-960.webp"
       },
       {
         "width": 1440,
-        "height": 1016,
-        "file": "trb-main-1440.webp"
+        "height": 1017,
+        "file": "trb-main-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "trb-detail": {
     "source": "유스튜디오/09-01.jpg",
@@ -27,21 +28,22 @@
     "kind": "supplied",
     "variants": [
       {
-        "width": 479,
-        "height": 454,
-        "file": "trb-detail-480.webp"
+        "width": 480,
+        "height": 455,
+        "file": "trb-detail-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 909,
-        "file": "trb-detail-960.webp"
+        "file": "trb-detail-white-v1-960.webp"
       },
       {
-        "width": 1439,
-        "height": 1363,
-        "file": "trb-detail-1440.webp"
+        "width": 1289,
+        "height": 1221,
+        "file": "trb-detail-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "dgbb-main": {
     "source": "유스튜디오/21-01.jpg",
@@ -50,20 +52,21 @@
     "variants": [
       {
         "width": 480,
-        "height": 362,
-        "file": "dgbb-main-480.webp"
+        "height": 363,
+        "file": "dgbb-main-white-v1-480.webp"
       },
       {
         "width": 960,
-        "height": 724,
-        "file": "dgbb-main-960.webp"
+        "height": 725,
+        "file": "dgbb-main-white-v1-960.webp"
       },
       {
-        "width": 1439,
-        "height": 1086,
-        "file": "dgbb-main-1440.webp"
+        "width": 1440,
+        "height": 1088,
+        "file": "dgbb-main-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "dgbb-detail": {
     "source": "유스튜디오/08-01.jpg",
@@ -72,20 +75,21 @@
     "variants": [
       {
         "width": 480,
-        "height": 489,
-        "file": "dgbb-detail-480.webp"
+        "height": 490,
+        "file": "dgbb-detail-white-v1-480.webp"
       },
       {
         "width": 960,
-        "height": 979,
-        "file": "dgbb-detail-960.webp"
+        "height": 981,
+        "file": "dgbb-detail-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1468,
-        "file": "dgbb-detail-1440.webp"
+        "width": 1241,
+        "height": 1268,
+        "file": "dgbb-detail-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "shield-main": {
     "source": "유스튜디오/23-02.jpg",
@@ -95,19 +99,20 @@
       {
         "width": 480,
         "height": 320,
-        "file": "shield-main-480.webp"
+        "file": "shield-main-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 640,
-        "file": "shield-main-960.webp"
+        "file": "shield-main-white-v1-960.webp"
       },
       {
-        "width": 1439,
-        "height": 960,
-        "file": "shield-main-1440.webp"
+        "width": 1440,
+        "height": 961,
+        "file": "shield-main-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "shield-detail": {
     "source": "유스튜디오/10-02.jpg",
@@ -117,19 +122,20 @@
       {
         "width": 480,
         "height": 425,
-        "file": "shield-detail-480.webp"
+        "file": "shield-detail-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 850,
-        "file": "shield-detail-960.webp"
+        "file": "shield-detail-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1275,
-        "file": "shield-detail-1440.webp"
+        "width": 1333,
+        "height": 1180,
+        "file": "shield-detail-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "pronged-main": {
     "source": "유스튜디오/24-01.jpg",
@@ -138,20 +144,21 @@
     "variants": [
       {
         "width": 480,
-        "height": 385,
-        "file": "pronged-main-480.webp"
+        "height": 384,
+        "file": "pronged-main-white-v1-480.webp"
       },
       {
         "width": 960,
-        "height": 770,
-        "file": "pronged-main-960.webp"
+        "height": 768,
+        "file": "pronged-main-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1154,
-        "file": "pronged-main-1440.webp"
+        "width": 1402,
+        "height": 1122,
+        "file": "pronged-main-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "pronged-detail": {
     "source": "유스튜디오/12-02.jpg",
@@ -161,19 +168,20 @@
       {
         "width": 480,
         "height": 442,
-        "file": "pronged-detail-480.webp"
+        "file": "pronged-detail-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 884,
-        "file": "pronged-detail-960.webp"
+        "file": "pronged-detail-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1326,
-        "file": "pronged-detail-1440.webp"
+        "width": 1307,
+        "height": 1203,
+        "file": "pronged-detail-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "strut-main": {
     "source": "유스튜디오/13-02.jpg",
@@ -183,38 +191,39 @@
       {
         "width": 480,
         "height": 425,
-        "file": "strut-main-480.webp"
+        "file": "strut-main-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 850,
-        "file": "strut-main-960.webp"
+        "file": "strut-main-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1275,
-        "file": "strut-main-1440.webp"
+        "width": 1333,
+        "height": 1180,
+        "file": "strut-main-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "acbb-main": {
-    "source": "유스튜디오/09-03.jpg",
+    "source": "website/src/reference-imports/acbb-main-1440.webp",
     "alt": "중장비 베어링용 ACBB 케이지",
     "kind": "supplied",
     "variants": [
       {
         "width": 480,
-        "height": 457,
+        "height": 480,
         "file": "acbb-main-480.webp"
       },
       {
         "width": 960,
-        "height": 913,
+        "height": 960,
         "file": "acbb-main-960.webp"
       },
       {
         "width": 1440,
-        "height": 1370,
+        "height": 1440,
         "file": "acbb-main-1440.webp"
       }
     ]
@@ -227,19 +236,20 @@
       {
         "width": 480,
         "height": 469,
-        "file": "wheel-main-480.webp"
+        "file": "wheel-main-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 939,
-        "file": "wheel-main-960.webp"
+        "file": "wheel-main-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1408,
-        "file": "wheel-main-1440.webp"
+        "width": 1268,
+        "height": 1240,
+        "file": "wheel-main-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "wheel-detail": {
     "source": "유스튜디오/13-06.jpg",
@@ -249,19 +259,20 @@
       {
         "width": 480,
         "height": 437,
-        "file": "wheel-detail-480.webp"
+        "file": "wheel-detail-white-v1-480.webp"
       },
       {
         "width": 960,
         "height": 873,
-        "file": "wheel-detail-960.webp"
+        "file": "wheel-detail-white-v1-960.webp"
       },
       {
-        "width": 1440,
-        "height": 1310,
-        "file": "wheel-detail-1440.webp"
+        "width": 1315,
+        "height": 1196,
+        "file": "wheel-detail-white-v1-1440.webp"
       }
-    ]
+    ],
+    "background_edit": "Neutral white background, 2026-09-30; original source retained."
   },
   "materials": {
     "source": "유스튜디오/07-2.jpg",
@@ -414,6 +425,50 @@
         "width": 1440,
         "height": 960,
         "file": "cage-concept-1440.webp"
+      }
+    ]
+  },
+  "brass-cage-main": {
+    "source": "website/src/reference-imports/brass-cage-main-1440.webp",
+    "alt": "ACBB 황동 케이지",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "file": "brass-cage-main-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "file": "brass-cage-main-960.webp"
+      },
+      {
+        "width": 1440,
+        "height": 1440,
+        "file": "brass-cage-main-1440.webp"
+      }
+    ]
+  },
+  "stamped-raceway-main": {
+    "source": "website/src/reference-imports/stamped-raceway-main-1440.webp",
+    "alt": "프레스 성형 레이스웨이",
+    "kind": "supplied",
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "file": "stamped-raceway-main-480.webp"
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "file": "stamped-raceway-main-960.webp"
+      },
+      {
+        "width": 1440,
+        "height": 1440,
+        "file": "stamped-raceway-main-1440.webp"
       }
     ]
   }
