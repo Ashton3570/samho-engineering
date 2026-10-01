@@ -39,7 +39,7 @@
 
   // Keep old bookmarked entry points useful after separating the pages.
   if (location.pathname === '/') {
-    const oldRoutes = { '#contact':'/contact/', '#finder':'/products/#finder', '#support':'/contact/#support' };
+    const oldRoutes = { '#contact':'/contact/', '#finder':'/products/', '#support':'/contact/#support' };
     if (oldRoutes[location.hash]) location.replace(oldRoutes[location.hash]);
   }
 
@@ -124,6 +124,51 @@
     if (['product','new','production'].includes(params.get('type'))) $('#inquiry-type').value = params.get('type');
     const output = $('#inquiry-output'), text = $('#inquiry-text');
     const invalidate = () => { output.hidden = true; text.value=''; $('#form-error').textContent=''; $('#output-status').textContent=''; };
+    const fileInput = $('#drawing-files'), fileList = $('#drawing-file-list');
+    const dropzone = $('#drawing-dropzone'), drawingLink = $('#drawing-link');
+    const attachmentStatus = $('#attachment-status');
+    let drawingFiles = [];
+    const fileSize = size => size < 1024 * 1024 ? `${Math.ceil(size / 1024)} KB` : `${(size / (1024 * 1024)).toFixed(1)} MB`;
+    function renderFiles() {
+      fileList.replaceChildren();
+      fileList.hidden = drawingFiles.length === 0;
+      drawingFiles.forEach((file, index) => {
+        const row = document.createElement('li'), label = document.createElement('span');
+        label.className = 'file-label'; label.textContent = file.name;
+        const size = document.createElement('span'); size.className = 'file-size'; size.textContent = fileSize(file.size); label.append(size);
+        const remove = document.createElement('button'); remove.type = 'button'; remove.textContent = '삭제';
+        remove.setAttribute('aria-label', `${file.name} 삭제`);
+        remove.addEventListener('click', () => {
+          drawingFiles.splice(index, 1); renderFiles(); invalidate();
+          attachmentStatus.dataset.error = 'false';
+          attachmentStatus.textContent = `파일을 선택 목록에서 삭제했습니다. ${drawingFiles.length}개 선택됨.`;
+          fileInput.focus();
+        });
+        row.append(label, remove); fileList.append(row);
+      });
+    }
+    function addFiles(files) {
+      const errors = [];
+      for (const file of files) {
+        if (drawingFiles.some(f => f.name === file.name && f.size === file.size && f.lastModified === file.lastModified)) continue;
+        if (file.size > 20 * 1024 * 1024) { errors.push(`${file.name}: 파일당 20MB 이하로 선택해 주세요.`); continue; }
+        if (drawingFiles.length >= 5) { errors.push('파일은 최대 5개까지 선택할 수 있습니다.'); break; }
+        drawingFiles.push(file);
+      }
+      fileInput.value = ''; renderFiles(); invalidate();
+      attachmentStatus.dataset.error = String(errors.length > 0);
+      attachmentStatus.textContent = errors.length ? errors.join(' ') : `${drawingFiles.length}개 파일을 선택했습니다. 아직 전송되지 않았습니다.`;
+    }
+    fileInput.addEventListener('change', () => addFiles(fileInput.files));
+    dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('is-dragging'); });
+    dropzone.addEventListener('dragleave', e => { if (!dropzone.contains(e.relatedTarget)) dropzone.classList.remove('is-dragging'); });
+    dropzone.addEventListener('drop', e => { e.preventDefault(); dropzone.classList.remove('is-dragging'); addFiles(e.dataTransfer.files); });
+    drawingLink.addEventListener('input', () => {
+      const value = drawingLink.value.trim();
+      let valid = !value;
+      try { const url = new URL(value); valid = ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password; } catch {}
+      drawingLink.setCustomValidity(valid ? '' : 'http:// 또는 https://로 시작하는 도면 공유 링크를 입력해 주세요.');
+    });
     form.addEventListener('invalid', e => { const details=e.target.closest('details'); if(details) details.open=true; }, true);
     form.addEventListener('input', invalidate);
     form.addEventListener('change', invalidate);
@@ -144,6 +189,14 @@
       lines.push('','[상담 정보]','회사·담당자: '+fields.company.trim(),'회신 연락처: '+fields.reply.trim(),'문의 유형: '+types[fields.type],'','[문의 내용]',fields.message.trim());
       const extra=[['spec','외경·요구 사양'],['drawing','도면 번호·개정 정보'],['quantity','필요 수량 (개)'],['annual','연간 예상 물량 (개)'],['due','희망 납기']].filter(([key])=>String(fields[key]||'').trim());
       if (extra.length) lines.push('','[추가 사양]',...extra.map(([key,label])=>label+': '+fields[key].trim()));
+      if (drawingFiles.length || fields.drawingLink.trim()) {
+        lines.push('', '[도면 자료]');
+        if (fields.drawingLink.trim()) lines.push('도면 공유 링크: ' + fields.drawingLink.trim());
+        if (drawingFiles.length) {
+          lines.push('별도 첨부할 파일:', ...drawingFiles.map(file => `- ${file.name.replace(/[\r\n]/g, ' ')} (${fileSize(file.size)})`));
+          lines.push('※ 이 요청서에는 파일명만 기록됩니다. 원본 파일은 이메일에 별도로 첨부해 주세요.');
+        }
+      }
       lines.push('','※ 상담 준비용 요청서입니다. 회사로 전송되거나 접수가 완료된 상태가 아닙니다.','※ 제작 가능 여부와 상세 사양, 공급 물량 및 납기는 별도 협의가 필요합니다.');
       text.value=lines.join('\n');output.hidden=false;
       $('#output-heading').focus({preventScroll:true});output.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
