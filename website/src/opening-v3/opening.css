@@ -39,3 +39,6 @@ body.logo-active .hero-gallery .hero-copy{
   body.logo-active .hero-gallery .hero-image img,
   body.logo-active .hero-gallery .hero-copy{transform:none;will-change:auto}
 }
+
+/* Selected size option 4; the existing mobile typography stays in effect. */
+@media(min-width:601px){.logo-caption p{font-size:clamp(50px,3.472222vw,62px)}.logo-caption span{font-size:clamp(25px,1.736111vw,31px)}}

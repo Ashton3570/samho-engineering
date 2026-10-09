@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const duration = 4500;
+  const duration = 5500;
   const $ = selector => document.querySelector(selector);
   const opening = $('#logo-opening'), site = $('#site-preview'), mark = $('.logo-mark');
   const caption = $('.logo-caption'), outlines = $('#logo-outlines'), fill = $('#logo-fill-rect');
@@ -8,13 +8,15 @@
   const paths = [...document.querySelectorAll('.logo-contour')];
   const review = $('.logo-review'), replay = $('#logo-replay');
   const session = window.samhoOpening;
+  const heroCopy = $('.cinema-copy'), heroControls = $('.cinema-bottom');
+  let heroRevealed = false, holdTimer = 0;
   const inspect = $('#logo-inspect'), controls = $('#logo-controls');
   const slider = $('#logo-timeline'), time = $('#logo-time');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const smooth = x => { x = Math.max(0, Math.min(1, x)); return x*x*(3-2*x); };
   const dissolve = x => { x = Math.max(0, Math.min(1, x)); return x*x*x*(x*(x*6-15)+10); };
   let frame = 0, safety = 0, interacted = false, returnFocus = false, current = duration, initialScale = 2.4;
-  function cancel() { cancelAnimationFrame(frame); clearTimeout(safety); }
+  function cancel() { cancelAnimationFrame(frame); clearTimeout(safety); clearTimeout(holdTimer); }
   function measure() {
     initialScale = Math.max(1, Math.min(innerHeight*.86, innerWidth*1.12)/mark.offsetWidth);
   }
@@ -34,10 +36,13 @@
     document.body.classList.remove('logo-active','logo-playing');
     site.style.removeProperty('--hero-reveal');
     site.style.removeProperty('--hero-copy-reveal');
+    heroCopy?.style.removeProperty('opacity');
+    heroControls?.style.removeProperty('opacity');
     if (slider) slider.value = duration;
-    if (time) time.textContent = '4.50초';
+    if (time) time.textContent = `${(duration/1000).toFixed(2)}초`;
     opening.dataset.state = 'complete';
     opening.dataset.time = duration;
+    document.dispatchEvent(new Event('samho:opening-complete'));
     document.querySelectorAll('[data-scene]').forEach(b=>b.setAttribute('aria-pressed','false'));
     document.documentElement.classList.remove('opening-pending');
     if (returnFocus) {
@@ -75,19 +80,31 @@
     caption.setAttribute('aria-hidden',String(ms<2750));
     // Open the bright gallery underneath the white veil over 1.2 seconds.
     // The picture settles first; the white copy card follows without a cut.
-    const heroReveal = dissolve((ms-3300)/1200);
-    site.style.setProperty('--hero-reveal', String(heroReveal));
-    site.style.setProperty('--hero-copy-reveal', String(dissolve((ms-3750)/750)));
-    const brandExit = smooth((ms-3850)/450);
+    const heroReveal = dissolve((ms-4300)/1200);
+    const copyReveal = String(dissolve((ms-4750)/750));
+    if (heroCopy) {
+      // Change only the two visible layers, not inherited properties on the whole site.
+      heroCopy.style.opacity = copyReveal;
+      if (heroControls) heroControls.style.opacity = copyReveal;
+    } else {
+      site.style.setProperty('--hero-reveal', String(heroReveal));
+      site.style.setProperty('--hero-copy-reveal', copyReveal);
+    }
+    const brandExit = smooth((ms-4850)/450);
     mark.style.opacity = 1-brandExit;
     caption.style.opacity = 1-brandExit;
     opening.style.opacity = 1-heroReveal;
-    opening.dataset.state = ms<1000?'intro':ms<2750?'forming':ms<3850?'name':'exit';
-    opening.dataset.time = Math.round(ms);
+    opening.dataset.state = ms<1000?'intro':ms<2750?'forming':ms<4850?'name':'exit';
+    if (review) opening.dataset.time = Math.round(ms);
+    if (ms >= 4300 && !heroRevealed) {
+      heroRevealed = true;
+      opening.dataset.heroVisible = 'true';
+      document.dispatchEvent(new Event('samho:opening-visible'));
+    }
   }
   function play(speed=1) {
     interacted = true;
-    cancel(); reveal();
+    cancel(); heroRevealed = false; opening.dataset.heroVisible = 'false'; reveal();
     returnFocus = true;
     opening.focus({preventScroll:true});
     document.body.classList.add('logo-playing');
@@ -101,7 +118,10 @@
       const ms = (now-started)*speed;
       if (ms>=duration) { finish(); return; }
       render(ms);
-      frame = requestAnimationFrame(tick);
+      // The fully visible company name holds still; do not redraw it each frame.
+      if (ms >= 3500 && ms < 4300) {
+        holdTimer = setTimeout(() => { frame = requestAnimationFrame(tick); }, (4300-ms)/speed);
+      } else frame = requestAnimationFrame(tick);
     }
     frame=requestAnimationFrame(tick);
   }

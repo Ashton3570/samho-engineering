@@ -12,7 +12,7 @@ shutil.copyfile(SRC/'layouts.css', OUT/'layouts.css')
 ASSET = '/assets/hero/product-collection-blue-v3-1920.webp'
 image = f'<img class="photo" src="{ASSET}" width="6144" height="4096" srcset="/assets/hero/product-collection-blue-v3-768.webp 768w, /assets/hero/product-collection-blue-v3-1152.webp 1152w, /assets/hero/product-collection-blue-v3-1536.webp 1536w, /assets/hero/product-collection-blue-v3-1920.webp 1920w, /assets/hero/product-collection-blue-v3-2560.webp 2560w, /assets/hero/product-collection-blue-v3-3840.webp 3840w" sizes="(max-width:560px) 1125px, (max-width:820px) 1100px, 100vw" fetchpriority="high" alt="블루 배경 위 삼호 베어링 부품 제품 구성, 제공 사진 기반 AI 편집 이미지">'
 caption = '<span class="caption">삼호 제품 사진을 바탕으로 제작한 AI 편집 이미지</span>'
-links = '<a href="/overview/">회사소개</a><a href="/products/">제품소개</a><a href="/production/">생산·품질</a><a href="/resources/">자료실</a>'
+links = '<a href="/overview/">회사소개</a><a href="/products/">제품소개</a><a href="/production/">생산·품질</a>'
 header = f'<header class="site-header"><a class="brand" href="/" aria-label="삼호엔지니어링 홈"><img class="symbol" src="/assets/samho-logo-indigo.svg" alt="" width="44" height="44"><img class="wordmark" src="/assets/samho-wordmark.svg" alt="SAMHO" width="124" height="28"></a><nav class="nav" aria-label="주 메뉴">{links}</nav><a class="header-cta" href="/contact/">제작 문의 ↗</a><details class="mobile-nav"><summary>메뉴</summary><nav aria-label="모바일 메뉴">{links}</nav></details></header>'
 eyebrow = '<p class="eyebrow">SAMHO ENGINEERING · SINCE 1979</p>'
 heading = '<h1 class="headline">작은 부품 하나에,<br>오랜 기술을 담습니다.</h1>'

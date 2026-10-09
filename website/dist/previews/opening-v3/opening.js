@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const duration = 4500;
+  const duration = 5500;
   const $ = selector => document.querySelector(selector);
   const opening = $('#logo-opening'), site = $('#site-preview'), mark = $('.logo-mark');
   const caption = $('.logo-caption'), outlines = $('#logo-outlines'), fill = $('#logo-fill-rect');
@@ -35,7 +35,7 @@
     site.style.removeProperty('--hero-reveal');
     site.style.removeProperty('--hero-copy-reveal');
     if (slider) slider.value = duration;
-    if (time) time.textContent = '4.50초';
+    if (time) time.textContent = `${(duration/1000).toFixed(2)}초`;
     opening.dataset.state = 'complete';
     opening.dataset.time = duration;
     document.querySelectorAll('[data-scene]').forEach(b=>b.setAttribute('aria-pressed','false'));
@@ -75,14 +75,14 @@
     caption.setAttribute('aria-hidden',String(ms<2750));
     // Open the bright gallery underneath the white veil over 1.2 seconds.
     // The picture settles first; the white copy card follows without a cut.
-    const heroReveal = dissolve((ms-3300)/1200);
+    const heroReveal = dissolve((ms-4300)/1200);
     site.style.setProperty('--hero-reveal', String(heroReveal));
-    site.style.setProperty('--hero-copy-reveal', String(dissolve((ms-3750)/750)));
-    const brandExit = smooth((ms-3850)/450);
+    site.style.setProperty('--hero-copy-reveal', String(dissolve((ms-4750)/750)));
+    const brandExit = smooth((ms-4850)/450);
     mark.style.opacity = 1-brandExit;
     caption.style.opacity = 1-brandExit;
     opening.style.opacity = 1-heroReveal;
-    opening.dataset.state = ms<1000?'intro':ms<2750?'forming':ms<3850?'name':'exit';
+    opening.dataset.state = ms<1000?'intro':ms<2750?'forming':ms<4850?'name':'exit';
     opening.dataset.time = Math.round(ms);
   }
   function play(speed=1) {

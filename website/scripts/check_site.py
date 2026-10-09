@@ -74,7 +74,11 @@ def main():
             value = asset.read_text()
             assert '생산능력' not in value and '33,600,000' not in value and '62,000,000' not in value, f'Sensitive production information: {asset}'
     public_pages = [p for p in paths if 'previews' not in p.relative_to(DIST).parts]
-    assert len(public_pages) == 17, f'Unexpected public page count: {len(public_pages)}'
+    for public_page in public_pages:
+        html = public_page.read_text()
+        assert html.count('class="page-progress"') == 1, f'Missing/duplicate progress bar: {public_page}'
+        assert '/assets/scroll-progress.js?' in html and '/assets/scroll-progress.css?' in html, public_page
+    assert len(public_pages) == 34, f'Unexpected public page count: {len(public_pages)}'
     assert not errors, '\n'.join(errors)
     print(f'{len(public_pages)} public pages + {len(paths)-len(public_pages)} previews: local links, anchors, headings, approved philosophy, and unknown specifications pass.')
 

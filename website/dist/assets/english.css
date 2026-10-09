@@ -1,0 +1,26 @@
+/* Latin typography follows the existing design, with room for English copy. */
+html[lang=en] body{letter-spacing:-.01em}
+html[lang=en] h1,html[lang=en] h2,html[lang=en] h3,html[lang=en] h4{letter-spacing:-.035em;word-break:normal}
+html[lang=en] .cinema-copy{max-width:900px;right:5%}
+html[lang=en] .cinema-copy h1{font-size:clamp(40px,3.7vw,66px);letter-spacing:-.04em;line-height:1.2}
+html[lang=en] .cinema-description{max-width:610px;line-height:1.7}
+html[lang=en] .family h3{font-size:clamp(20px,1.8vw,28px);line-height:1.35}
+html[lang=en] .family p{font-size:13px}
+html[lang=en] .contact-band h2{font-size:clamp(26px,2.7vw,37px)}
+html[lang=en] .organization dt{min-height:58px;line-height:1.5}
+html[lang=en] .logo-caption p{font-size:clamp(32px,3.5vw,50px);letter-spacing:-.025em}
+html[lang=en] .samho-history-content .ev.nowev .ev-y span::after{content:" – Present"}
+@media(max-width:1000px){html[lang=en] .cinema-copy h1{font-size:clamp(35px,4.5vw,48px)}}
+@media(max-width:600px){
+ html[lang=en] .cinema-copy h1{font-size:clamp(27px,7vw,36px);line-height:1.2}
+ html[lang=en] .cinema-description{font-size:13px}
+ html[lang=en] .cinema-links{gap:10px}
+ html[lang=en] .cinema-link{padding:10px 14px;gap:14px}
+ html[lang=en] .logo-caption p{font-size:25px}
+ html[lang=en] .family h3{font-size:22px}
+ html[lang=en] .comparison-bar>div{gap:9px}
+ html[lang=en] .comparison-bar .button{font-size:11px;padding:11px 10px}
+ html[lang=en] .comparison-bar .text-link{font-size:10px}
+ html[lang=en] .contact-topics{grid-template-columns:1fr}
+ html[lang=en] .organization dt{min-height:48px}
+}

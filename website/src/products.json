@@ -40,7 +40,7 @@
     "english": "DGBB SHIELD",
     "title": "DGBB 실드",
     "short": "깊은 홈 볼 베어링용 실드. 케이지와 함께 Site-B에서 생산합니다.",
-    "description": "삼호엔지니어링의 주요 생산 품목인 깊은 홈 볼 베어링(DGBB)용 실드입니다. 회사 소개서에 기재된 생산 외경 범위는 35–300 mm입니다.",
+    "description": "삼호엔지니어링의 주요 생산 품목인 깊은 홈 볼 베어링(DGBB)용 실드입니다. 생산 외경 범위는 35–300 mm입니다.",
     "tags": [
       "DGBB",
       "Site-B"
@@ -57,7 +57,7 @@
     "english": "PRONGED TYPE CAGE",
     "title": "프롱 타입 케이지",
     "short": "외경 20–40 mm 범위의 프롱 타입 케이지입니다.",
-    "description": "회사 소개서에 수록된 Pronged type cage 제품입니다. 생산 외경 범위는 20–40 mm이며, 세부 형상과 요구 사양은 도면을 기준으로 확인합니다.",
+    "description": "프롱 타입 케이지 제품입니다. 생산 외경 범위는 20–40 mm이며, 세부 형상과 요구 사양은 도면을 기준으로 확인합니다.",
     "tags": [
       "PRONGED TYPE",
       "케이지"
@@ -74,7 +74,7 @@
     "english": "RACEWAY FOR STRUT BEARING",
     "title": "스트럿 베어링 레이스웨이",
     "short": "스트럿 베어링에 적용되는 레이스웨이입니다.",
-    "description": "스트럿 베어링용 레이스웨이입니다. 회사 소개서에 기재된 생산 외경 범위는 60–150 mm입니다.",
+    "description": "스트럿 베어링용 레이스웨이입니다. 생산 외경 범위는 60–150 mm입니다.",
     "tags": [
       "STRUT BEARING",
       "레이스웨이"
@@ -108,7 +108,7 @@
     "english": "WHEEL BEARING COVER & CAP",
     "title": "휠 베어링 커버·캡",
     "short": "휠 베어링에 적용되는 커버와 캡입니다.",
-    "description": "회사 소개서에 수록된 휠 베어링 커버 및 캡 제품입니다. 필요한 형상, 치수와 도면 정보를 정리해 상담할 수 있습니다.",
+    "description": "휠 베어링 커버 및 캡 제품입니다. 필요한 형상, 치수와 도면 정보를 정리해 상담할 수 있습니다.",
     "tags": [
       "WHEEL BEARING",
       "COVER & CAP"
@@ -142,7 +142,7 @@
     "english": "STAMPED RACEWAY",
     "title": "프레스 성형 레이스웨이",
     "short": "프레스 성형 방식의 레이스웨이 제품입니다.",
-    "description": "회사 소개서에 Stamped raceway로 소개된 제품입니다. 제품 형상과 치수, 적용 조건은 도면을 기준으로 확인합니다.",
+    "description": "프레스 성형 방식의 레이스웨이 제품입니다. 제품 형상과 치수, 적용 조건은 도면을 기준으로 확인합니다.",
     "tags": [
       "STAMPED",
       "레이스웨이"
