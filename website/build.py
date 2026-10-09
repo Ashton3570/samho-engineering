@@ -65,14 +65,14 @@ def page(path, title, body, active='', company=False, description=''):
 <link rel="icon" href="/favicon-32.png?v=20261001-logo" type="image/png" sizes="32x32">
 <link rel="icon" href="/favicon.ico?v=20261001-logo" sizes="any">
 <link rel="icon" href="/favicon.svg?v=20261001-logo" type="image/svg+xml" sizes="any">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261001-logo" sizes="180x180"><link rel="stylesheet" href="/assets/site.css?v=20261008-language-left">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261001-logo" sizes="180x180"><link rel="stylesheet" href="/assets/site.css?v=20261009-brand06">
 <link rel="stylesheet" href="/assets/scroll-progress.css?v=20260930-1"><script src="/assets/scroll-progress.js?v=20261008-performance" defer></script>
 {product_script}<script src="/assets/site.js?v=20261008-bilingual" defer></script></head>
 <body><a class="skip" href="#main">본문 바로가기</a>
-<header class="header"><div class="header-inner wrap"><a class="brand header-brand" href="/" aria-label="삼호엔지니어링 홈"><img class="header-symbol" src="/assets/samho-logo-indigo.svg" width="48" height="48" alt=""><img class="header-wordmark" src="/assets/samho-wordmark.svg" width="486" height="100" alt="SAMHO"></a>{language_switch(path, 'header-language')}<nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav><a class="header-contact" href="/contact/">제작 문의 <span aria-hidden="true">↗</span></a><button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div></header>
+<header class="header"><div class="header-inner wrap"><a class="brand header-brand" href="/" aria-label="삼호엔지니어링 홈"><img class="brand-lockup" src="/assets/samho-engineering-brand-v6.svg" width="251" height="60" alt="SAMHO ENGINEERING"></a>{language_switch(path, 'header-language')}<nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav><a class="header-contact" href="/contact/">제작 문의 <span aria-hidden="true">↗</span></a><button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div></header>
 <dialog id="mobile-menu" aria-labelledby="menu-title"><div class="menu-top"><h2 id="menu-title">전체 메뉴</h2><button data-close aria-label="메뉴 닫기">닫기 ×</button></div><nav aria-label="모바일 메뉴">{nav}<a href="/contact/">제작 문의</a></nav>{language_switch(path, 'menu-language')}<div class="menu-company">{''.join(link(p,t) for p,t in COMPANY)}</div><p>베어링 부품 전문 제조 · Since 1979</p></dialog>
 <main id="main">{body}</main>
-<footer class="footer wrap"><div class="footer-main"><a class="brand" href="/"><span>SAMHO</span><small>삼호엔지니어링</small></a><p>베어링 부품 전문 제조<br>경상북도 영주시 장수면 용주로 88-60 (갈산리)<br>영주공장 <a href="tel:0547088000">054-708-8000</a></p><nav aria-label="하단 메뉴">{''.join(link(p,t) for p,t in NAV)}<a href="/contact/">제작 문의</a></nav></div><div class="footer-bottom"><div class="footer-credit"><p>© Copyright 2026 삼호엔지니어링 All rights reserved.</p><p class="footer-maker">made by ADPOINT.</p></div><span>기본에 충실한 기술, 신뢰로 이어지는 품질.</span><a href="#main">맨 위로 ↑</a></div></footer>
+<footer class="footer wrap"><div class="footer-main"><a class="brand footer-brand" href="/" aria-label="삼호엔지니어링 홈"><img class="brand-lockup" src="/assets/samho-engineering-brand-v6.svg" width="251" height="60" alt="SAMHO ENGINEERING" loading="lazy" decoding="async"></a><p>베어링 부품 전문 제조<br>경상북도 영주시 장수면 용주로 88-60 (갈산리)<br>영주공장 <a href="tel:0547088000">054-708-8000</a></p><nav aria-label="하단 메뉴">{''.join(link(p,t) for p,t in NAV)}<a href="/contact/">제작 문의</a></nav></div><div class="footer-bottom"><div class="footer-credit"><p>© Copyright 2026 삼호엔지니어링 All rights reserved.</p><p class="footer-maker">made by ADPOINT.</p></div><span>기본에 충실한 기술, 신뢰로 이어지는 품질.</span><a href="#main">맨 위로 ↑</a></div></footer>
 <div id="status" class="toast" role="status" aria-live="polite"></div></body></html>'''
     if not path:
         html = with_home_opening(html)
@@ -178,6 +178,7 @@ def build():
     assets.mkdir(exist_ok=True)
     (assets/'samho-logo-indigo.svg').write_text((ROOT/'src/opening-v3/samho-logo.svg').read_text())
     (assets/'samho-wordmark.svg').write_text((ROOT/'src/samho-wordmark.svg').read_text())
+    (assets/'samho-engineering-brand-v6.svg').write_bytes((ROOT/'src/samho-engineering-brand-v6.svg').read_bytes())
     (assets/'hero').mkdir(exist_ok=True)
     for image in (ROOT/'src/hero').glob('*.webp'):
         (assets/'hero'/image.name).write_bytes(image.read_bytes())
